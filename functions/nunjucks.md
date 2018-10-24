@@ -2,17 +2,22 @@
 description: Description of Nunjucks
 ---
 
-# Base
+# Nunjucks
+
 
 ## title
-
 Make the first letter of the string uppercase also a list of string
 
-_params_
 
-```text
+**params**
+    |  |  |
+    | :--- | :--- |
+
+
+```
 example: {{ "foo bar baz" | title }}
 
 output: Foo Bar Baz
 ```
+
 
