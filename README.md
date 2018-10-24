@@ -1,7 +1,3 @@
----
-description: Here you will find all the documentation for creating templates for Fabulator
----
-
 # Fabulator
 
 ## Template
