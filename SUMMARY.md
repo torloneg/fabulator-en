@@ -8,7 +8,7 @@
 
 ## FUNCTIONS
 
-* [Untitled](functions/untitled.md)
+* [Number](functions/untitled.md)
 
 ## EXAMPLE
 
