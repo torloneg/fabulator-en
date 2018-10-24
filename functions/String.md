@@ -34,6 +34,9 @@ Removes prefix from start of string.
 
 {% hint style="info" %}
 *params*
+    | title | part of string  |
+    | type | string |
+    | value |  |
 {% endhint %}
 
 ```
@@ -46,6 +49,9 @@ Removes suffix from end of string
 
 {% hint style="info" %}
 *params*
+    | title | part of string  |
+    | type | string |
+    | value |  |
 {% endhint %}
 
 ```
@@ -106,6 +112,9 @@ Return the substring denoted by n positive left-most characters.
 
 {% hint style="info" %}
 *params*
+    | title | index  |
+    | type | int |
+    | value |  |
 {% endhint %}
 
 ```
@@ -118,6 +127,9 @@ Returns a string repeated n times.
 
 {% hint style="info" %}
 *params*
+    | title | number of repeater  |
+    | type | int |
+    | value |  |
 {% endhint %}
 
 ```
@@ -130,6 +142,9 @@ Return the substring denoted by n positive right-most characters.
 
 {% hint style="info" %}
 *params*
+    | title | index position  |
+    | type | int |
+    | value |  |
 {% endhint %}
 
 ```
@@ -142,6 +157,9 @@ replace last right char
 
 {% hint style="info" %}
 *params*
+    | title | new char to replace  |
+    | type | int |
+    | value |  |
 {% endhint %}
 
 ```
@@ -178,6 +196,9 @@ Return the float value, wraps parseFloat
 
 {% hint style="info" %}
 *params*
+    | title | precision  |
+    | type | int |
+    | value |  |
 {% endhint %}
 
 ```
@@ -190,6 +211,9 @@ Return the float value, wraps parseInt
 
 {% hint style="info" %}
 *params*
+    | title | precision  |
+    | type | int |
+    | value |  |
 {% endhint %}
 
 ```
@@ -198,16 +222,24 @@ example: {{ 3.45522222333232 | String.toInt(2) }}
 output: 3
 ```
 ## String.unescapeHTML
-Unescapes the html.
+type: filter
+group: string
+origin: custom
+description: |
+       Unescapes the html.
+params:
+return: string
+input: &gt;
+        {{ &#x27;&amp;lt;div&amp;gt;hi&amp;lt;/div&amp;gt;&#x27; | String.unescapeHTML() }}
+output: &lt;div&gt;hi&lt;/div&gt;
 
 {% hint style="info" %}
 *params*
 {% endhint %}
 
 ```
-example: {{ '&lt;div&gt;hi&lt;/div&gt;' | String.unescapeHTML() }}
-
-output: &lt;div&gt;hi&lt;/div&gt;
+example: 
+output: 
 ```
 ## String.wrapHTML
 wrapHTML helps to avoid concatenation of element with string. the string will be wrapped with HTML Element and their attributes.
