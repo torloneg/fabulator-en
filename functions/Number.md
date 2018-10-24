@@ -13,7 +13,7 @@ returns an number in the language specified as an argument
     | title | language  |
     | type | list |
     | value | en,it |
-{
+
 
 ```
 example: {{ 1 | Numeral.NumberToLanguage('en')}}
@@ -28,7 +28,7 @@ returns an ordinal number in the language specified as an argument
     | title | language  |
     | type | list |
     | value | en,it |
-{
+
 
 ```
 example: {{ 1 | Numeral.OrdinalToLanguage('en')}}
