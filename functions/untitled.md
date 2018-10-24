@@ -8,8 +8,13 @@ description: Description of Number
 
 returns an number in the language specified as an argument
 
+###Params
 {% hint style="info" %}
-_params_ \*language list en,it
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
 {% endhint %}
 
 ```text
