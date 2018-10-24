@@ -8,10 +8,10 @@
 
 ## FUNCTIONS
 
-* [Base](functions/Nunjucks.md)
-* [Number](functions/Number.md)
-* [Numeral](functions/Numeral.md)
-* [String](functions/String.md)
+* [Base](functions/nunjucks.md)
+* [Number](functions/number.md)
+* [Numeral](functions/numeral.md)
+* [String](functions/string.md)
 
 ## EXAMPLE
 
