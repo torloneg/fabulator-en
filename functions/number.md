@@ -1,6 +1,5 @@
 ---
 description: Description of Number
-
 ---
 
 # Number
