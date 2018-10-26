@@ -1,4 +1,4 @@
----
+﻿---
 description: Description of Nunjucks
 ---
 
@@ -491,7 +491,7 @@ output: foo &lt;a href&#x3D;&quot;http://www.example.com/&quot;&gt;http://www.ex
 
 **params**
     |  |  |
-    | :--- | :--- |
+    | :--- | :--- | 
 
 
 ```
