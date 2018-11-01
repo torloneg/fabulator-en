@@ -21,7 +21,7 @@
 * [Array](functions/Array.md)
 * [Accounting](functions/Accounting.md)
 * [Conversation](functions/Conversation.md)
-* [DateTime](functions/Moment.md)
+* [Moment](functions/Moment.md)
 * [Convert](functions/Convert.md)
 * [Number](functions/number.md)
 * [Numeral](functions/numeral.md)
