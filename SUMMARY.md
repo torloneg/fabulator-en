@@ -27,6 +27,8 @@
 * [Number](functions/number.md)
 * [Numeral](functions/numeral.md)
 * [String](functions/string.md)
+* [Statistics](functions/Statistics.md)
+* [Utility](functions/Index.md)
 
 ## EXAMPLE
 
