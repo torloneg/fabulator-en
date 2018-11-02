@@ -48,7 +48,8 @@ numbers of years elapsed between the input date and today
 
 
 ```
-example: {{"31/10/2000" |Moment.AgeYear()}} {{"31/10/2017" |Moment.AgeYear()}}
+example: {{"31/10/2000" |Moment.AgeYear()}}
+{{"31/10/2017" |Moment.AgeYear()}}
 
 output: 18
 1
@@ -67,9 +68,12 @@ date in extended format in the passed language as a parameter
 
 
 ```
-example: {{"31/10/2018" | Moment.Date("en")}} {{"30/10/2018" |Moment.Date("it")}}
+example: {{"31/10/2018" | Moment.Date("en")}}
+ {{"30/10/2018" |Moment.Date("it")}}
 
-output: 31 november 2018
+output: 
+31 november 2018
+
 31 novembre 2018
 
 ```
@@ -86,9 +90,11 @@ date in extended format in the passed language as a parameter
 
 
 ```
-example: {{"25/12/2018 12:30" | Moment.DateTime("it")}} {{"25/12/2018 12:30" |Moment.DateTime("en")}}
+example: {{"25/12/2018 12:30" | Moment.DateTime("it")}}
+{{"25/12/2018 12:30" |Moment.DateTime("en")}}
 
 output: 31 november 2018 alle ore 12 e 30
+
 31 novembre 2018 12:30
 
 ```
@@ -123,9 +129,11 @@ returns the day in the language indicated as parameter
 
 
 ```
-example: {{"31/10/2018" | Moment.FromNow("en")}} {{"30/10/2018" |Moment.AgeYear("it")}}
+example: {{"31/10/2018" | Moment.FromNow("en")}}
+{{"30/10/2018" |Moment.AgeYear("it")}}
 
 output: today
+
 yesterday
 
 ```
@@ -142,9 +150,11 @@ returns the month in letters in the language indicated as a parameter
 
 
 ```
-example: {{"31/10/2018" | Moment.MonthOfYear("en")}} {{"30/10/2018" |Moment.AgeYear("it")}}
+example: {{"31/10/2018" | Moment.MonthOfYear("en")}}
+{{"30/10/2018" |Moment.AgeYear("it")}}
 
 output: november
+
 novembre
 
 ```
@@ -164,9 +174,11 @@ Now in format string
 
 
 ```
-example: {{"" |Moment.Now('it','DD/MM/YYYY hh:mm:ss')}} {{"" |Moment.Now('it','DD MMM YYYY')}}
+example: {{"" |Moment.Now('it','DD/MM/YYYY hh:mm:ss')}}
+{{"" |Moment.Now('it','DD MMM YYYY')}}
 
 output: 31/10/2018 22:22:22
+
 31 Ottobre 2018
 
 ```
@@ -183,9 +195,11 @@ date in extended format in the passed language as a parameter
 
 
 ```
-example: {{"25/12/2018 12:30" | Moment.DateTime("it")}} {{"25/12/2018 12:30" |Moment.DateTime("en")}}
+example: {{"25/12/2018 12:30" | Moment.DateTime("it")}}
+{{"25/12/2018 12:30" |Moment.DateTime("en")}}
 
 output: 12 e 30
+
 12:30
 
 ```
@@ -202,7 +216,8 @@ Returns the date in the indicated timezone
 
 
 ```
-example: {{"25/12/2018 12:30" | Moment.timeWithTimezone("it","DD/MM/YYYY ")}} {{"25/12/2018 12:30" | Moment.timeWithTimezone("it","DD/MM/YYYY ")}}
+example: {{"25/12/2018 12:30" | Moment.timeWithTimezone("it","DD/MM/YYYY ")}}
+{{"25/12/2018 12:30" | Moment.timeWithTimezone("it","DD/MM/YYYY ")}}
 
 output: 
 

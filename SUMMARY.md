@@ -22,6 +22,7 @@
 * [Accounting](functions/Accounting.md)
 * [Conversation](functions/Conversation.md)
 * [Moment](functions/Moment.md)
+* [Money](functions/Money.md)
 * [Convert](functions/Convert.md)
 * [Number](functions/number.md)
 * [Numeral](functions/numeral.md)

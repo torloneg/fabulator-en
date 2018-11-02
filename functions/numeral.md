@@ -54,7 +54,8 @@ return a number with a new format
 ```
 example: {{10000 | Numeral.Format('0,0.0000')}}
 
-output: 10000
+output: 10,000.0000
+
 ```
 ## Numeral.Plularize
 returns a string based on the value of the number &#x3D;&#x3D; 1 ( singular ), &gt;1 (plural), &#x3D;&#x3D;0 ( undefined)
