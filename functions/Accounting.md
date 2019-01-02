@@ -34,7 +34,7 @@ format a list of values for column-display
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
+    | symbol | string  | monetary symbol
 
 
 ### example:
@@ -56,7 +56,10 @@ format any number into currency
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
+    | symbol | string  | 
+    | precision | int  | 
+    | decimal | int  | 
+    | thousand | int  | 
 
 
 ### example:
@@ -78,7 +81,10 @@ format any number into currency
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
+    | symbol | string  | 
+    | precision | int  | 
+    | decimal | int  | 
+    | thousand | int  | 
 
 
 ### example:
@@ -100,7 +106,8 @@ format a number with custom precision and localisation
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
+    | symbol | string  | 
+    | precision | int  | 
 
 
 ### example:
