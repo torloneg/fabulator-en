@@ -22,7 +22,9 @@ query a MongoDB collection
 ```
 {% set query_mongodb = "{ \"district\": \"abruzzo\" }" %}
 {% DB_MongoQuery url=$DATABASE_MONGODB,collection="Meteo_History",query=query_mongodb,skip=0,limit=10,sort="{}",select="{}",context="items" %}
- {% for item in items %}\n {{ item.city | title }} : MIN ( {{item.temperatures.min.value }}°C ) MAX ( {{item.temperatures.max.value }}°C )
+{% for item in items %}
+ {{ item.city | title }} : MIN ( {{item.temperatures.min.value }}°C ) MAX ( {{item.temperatures.max.value }}°C )
+
 {% endfor %}
 {% error %}
 {% END_DB_MongoQuery %}
