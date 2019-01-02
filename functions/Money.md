@@ -12,8 +12,9 @@ converts the value of one currency into another
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
-    |  | string  | 
+    | input | string  | 
+    | from | string  | 
+    | to | string  | 
 
 
 ```
@@ -29,6 +30,7 @@ returns the symbol of a currency
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -44,7 +46,7 @@ TODO
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | TODO  | 
+    | input | string  | 
 
 
 ```

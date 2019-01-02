@@ -12,7 +12,8 @@ return the attribute value
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
+    | input | object  | object
+    | attribute | string  | value  name of attribute of json object
 
 ```
 example: {{  { name:'example', value:1} | Index.Attr('name') }} {{  { name:'example', value:1} | Index.Attr('value') }}
@@ -28,7 +29,8 @@ return the attribute value selected from a jsonpath path
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
+    | input | object  | 
+    | path | string  | 
 
 ```
 example: 

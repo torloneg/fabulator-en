@@ -12,7 +12,8 @@ Add a integer to a number
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | int  | 
+    | input | string  | 
+    | value | int  | 
 
 
 ```
@@ -27,7 +28,8 @@ divide a number by another number
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | int  | 
+    | input | string  | 
+    | value | int  | 
 
 
 ```

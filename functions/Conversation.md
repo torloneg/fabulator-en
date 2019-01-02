@@ -12,7 +12,7 @@ joining string with saparator
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
     | index | int  | 
     | separator | string  | 
     | last_separator | string  | 

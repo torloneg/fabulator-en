@@ -12,7 +12,7 @@ returns true if all elements in the list are equal
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
     | predicate | int|string|boolean  | 
 
 
@@ -30,7 +30,7 @@ Returns true if any of the values in the list pass the predicate truth test
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | array list of element in input
+    | input | array  | array list of element in input
     | predicate | int  | predicate to test
 
 
@@ -48,7 +48,7 @@ Returns true if all of the values in the list pass the predicate truth test. Sho
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | array list of element in input
+    | input | array  | array list of element in input
     | predicate | int|string|boolean  | predicate truth test
 
 
@@ -66,7 +66,7 @@ Looks through each value in the list, returning an array of all the values that 
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | array list of element in input
+    | input | array  | array list of element in input
     | filter | int  | 
 
 
@@ -83,7 +83,7 @@ First element from array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
 
 
 ```
@@ -99,7 +99,7 @@ Get a object by index
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
     | index | int  | 
 
 
@@ -116,7 +116,7 @@ Initial element from array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
     | count | int  | 
 
 
@@ -133,7 +133,7 @@ Last element from array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
 
 
 ```
@@ -149,7 +149,7 @@ uses the input value as a search key in the collection passed as an argument. If
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | string  | 
+    | input | string  | 
     | collection | array  | 
 
 
@@ -166,7 +166,7 @@ extracting a list of property values.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
     | name | string  | 
 
 
@@ -183,7 +183,7 @@ Returns the rest of the elements in an array. Pass an index to return the values
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
     | index | int  | 
 
 
@@ -200,7 +200,7 @@ Returns true if any of the values in the list pass the predicate truth test
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | array  | 
+    | input | array  | 
     | predicate | int|string|boolean  | 
 
 
@@ -218,7 +218,7 @@ use value as index of array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | int  | 
+    | input | int  | 
     | list | array  | 
 
 

@@ -12,7 +12,7 @@ A handy utility for converting between quantities in different units.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | float  | 
+    | input | float  | 
     | from | string  | 
     | to | string  | 
 
