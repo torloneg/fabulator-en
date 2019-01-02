@@ -5,21 +5,24 @@ block to handle a text within another tag
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title |   |
-    | type |  |
-    | value |  |
-    | title |   |
-    | type |  |
-    | value |  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
+    | clear | tag  | block to delimit the text  |  block to delimit the text  | cr,lf
 
+
+
+### example:
+```
+{% text clear="cr,lf" %}
+Risultato di parità con {{data.score1}} ...
+{% endtext %}
 
 ```
-example:
-{% text clear="cr,lf" %} Risultato di parità con {{data.score1}} ... {% endtext %}
 
-output:
+### output:
+```
 Risultato di parità con 4 ...
+
 ```
+
 
