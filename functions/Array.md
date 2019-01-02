@@ -12,7 +12,8 @@ returns true if all elements in the list are equal
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | array  | 
+    | value | array  | 
+    | value | object  | 
 
 
 ```
@@ -29,7 +30,8 @@ Returns true if any of the values in the list pass the predicate truth test
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | array  | 
+    | value | array  | array list of element in input
+    | predicate | object  | predicate to test
 
 
 ```
@@ -46,7 +48,8 @@ Returns true if all of the values in the list pass the predicate truth test. Sho
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | array  | 
+    | value | array  | array list of element in input
+    | predicate | object  | predicate truth test
 
 
 ```
@@ -63,6 +66,8 @@ Looks through each value in the list, returning an array of all the values that 
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | array  | array list of element in input
+    | filter | object  | 
 
 
 ```
@@ -78,6 +83,7 @@ First element from array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | array  | 
 
 
 ```
@@ -93,7 +99,8 @@ Get a object by index
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | int  | 
+    | value | array  | 
+    | index | number  | 
 
 
 ```
@@ -109,10 +116,12 @@ Initial element from array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | array  | 
+    | count | number  | 
 
 
 ```
-example: {{  [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}]  | Array.Last(2)}}
+example: {{  [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}]  | Array.Initial(2)}}
 
 output: [{name: &#x27;moe&#x27;, age: 40}, {name: &#x27;larry&#x27;, age: 50} ]
 
@@ -124,6 +133,7 @@ Last element from array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | array  | 
 
 
 ```
@@ -139,7 +149,8 @@ uses the input value as a search key in the collection passed as an argument. If
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | array  | 
+    | value | string  | 
+    | array | array  | 
 
 
 ```
@@ -148,18 +159,19 @@ example: {{  "Striker"  | Array.Lookup([{value:"Striker",text:"l'attaccante"},{v
 output: l&#x27;attaccante
 
 ```
-## Array.pluck
+## Array.Pluck
 extracting a list of property values.
 
 
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
+    | value | array  | 
+    | name | string  | 
 
 
 ```
-example: {{  [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}]  | Array.pluck('name')}}
+example: {{  [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}]  | Array.Pluck('name')}}
 
 output: [&quot;moe&quot;, &quot;larry&quot;, &quot;curly&quot;]
 
@@ -171,7 +183,8 @@ Returns the rest of the elements in an array. Pass an index to return the values
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | int  | 
+    | value | array  | 
+    | index | number  | 
 
 
 ```
@@ -187,7 +200,8 @@ Returns true if any of the values in the list pass the predicate truth test
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | array  | 
+    | value | array  | 
+    | predicate | Number|String|Boolean  | 
 
 
 ```
@@ -204,7 +218,8 @@ use value as index of array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | int  | 
+    | value | Number  | 
+    | List | Array  | 
 
 
 ```

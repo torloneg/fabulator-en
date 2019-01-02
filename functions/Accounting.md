@@ -12,6 +12,7 @@ better rounding for floating point numbers
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | float  | 
     | precision | int  | digit number
 
 
@@ -34,6 +35,7 @@ format a list of values for column-display
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | array  | array of float number
     | symbol | string  | monetary symbol
 
 
@@ -56,8 +58,9 @@ format any number into currency
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | float  | 
     | symbol | string  | 
-    | precision | int  | 
+    | precision | Int  | 
     | decimal | int  | 
     | thousand | int  | 
 
@@ -81,6 +84,7 @@ format any number into currency
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | float  | 
     | symbol | string  | 
     | precision | int  | 
     | decimal | int  | 
@@ -106,6 +110,7 @@ format a number with custom precision and localisation
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | value | float  | 
     | symbol | string  | 
     | precision | int  | 
 
