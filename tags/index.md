@@ -7,7 +7,7 @@ processes the text in the main block by passing a json object taken from a posit
 **params**
     | name | type  | description | allow
     | :--- | :---  | :---        | :---       |
-    | index | editor  |   | 
+    | index | number  | index o array  | 
 
 
 
