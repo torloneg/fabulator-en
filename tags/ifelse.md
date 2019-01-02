@@ -5,22 +5,24 @@ if tests a condition and lets you selectively display content. It behaves exactl
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title |   |
-    | type |  |
-    | value |  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
 
 
+
+### example:
 ```
-example:
 {% if variable %} It is true{% endif %}
 {% if hungry %}  I am hungry
 {% elif tired %}  I am tired
 {% else %}  I am good!
 {% endif %}
 
-output:
+```
+
+### output:
+```
 It is true
 ```
+
 

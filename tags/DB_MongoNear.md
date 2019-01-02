@@ -5,20 +5,20 @@ executes a geolocated query on a MongoDB collection
 
 
 **params**
-    | name | type  | description |
-    | :--- | :---  | :---        |
-    | url | string  | connection string  |
-    | collection | string  | collection name  |
-    | query | string  | query in mongodb format with GEO condition or a variable name with the query  |
-    | latitude | double  | center latitude  |
-    | longitude | double  | center longitude  |
-    | minDistance | number  | min distance in meter from center  |
-    | maxDistance | number  | max distance in meter from center  |
-    | skip | number  | first record  |
-    | limit | number  | number of record  |
-    | select | string  | string with field list  |
-    | sort | string  | field to sort the result  |
-    | context | string  | new variable to insert the result in json format  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
+    | url | string  | connection string  | 
+    | collection | string  | collection name  | 
+    | query | string  | query in mongodb format with GEO condition or a variable name with the query  | 
+    | latitude | double  | center latitude  | 
+    | longitude | double  | center longitude  | 
+    | minDistance | number  | min distance in meter from center  | 
+    | maxDistance | number  | max distance in meter from center  | 
+    | skip | number  | first record  | 
+    | limit | number  | number of record  | 
+    | select | string  | string with field list  | 
+    | sort | string  | field to sort the result  | 
+    | context | string  | new variable to insert the result in json format  | 
 
 
 

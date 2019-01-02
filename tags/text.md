@@ -7,7 +7,7 @@ block to handle a text within another tag
 **params**
     | name | type  | description | allow
     | :--- | :---  | :---        | :---       |
-    | clear | tag  | block to delimit the text  |  block to delimit the text  | cr,lf
+    | clear | string  | block to delimit the text  | cr,lf
 
 
 

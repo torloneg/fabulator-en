@@ -5,16 +5,16 @@ query a MongoDB collection
 
 
 **params**
-    | name | type  | description |
-    | :--- | :---  | :---        |
-    | url | string  | connection string  |
-    | collection | string  | collection name  |
-    | query | string  | query in mngodb format or a variable name with the query  |
-    | skip | number  | first record  |
-    | limit | number  | number of record  |
-    | select | string  | string with field list  |
-    | sort | string  | field to sort the result  |
-    | context | string  | new variable to insert the result in json format  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
+    | url | string  | connection string  | 
+    | collection | string  | collection name  | 
+    | query | string  | query in mngodb format or a variable name with the query  | 
+    | skip | number  | first record  | 
+    | limit | number  | number of record  | 
+    | select | string  | string with field list  | 
+    | sort | string  | field to sort the result  | 
+    | context | string  | new variable to insert the result in json format  | 
 
 
 
