@@ -10,90 +10,100 @@ better rounding for floating point numbers
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | precision  |
-    | type | int |
-    | value |  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
+    |  | int  | digit number  | 
 
+
+### example:
+```
 
 ```
-example: {{  0.615 | Accounting.Fix(2)}}
 
-output: 0.61
+### output:
+```
 
 ```
+
 ## Accounting.FormatColumn
 format a list of values for column-display
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | symbol  |
-    | type | string |
-    | value |  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
+    |  | string  |   | 
 
+
+### example:
+```
 
 ```
-example: {{ [123.5, 3456.49, 777888.99, 12345678, -5432] | Accounting.FormatColumn("$ ")}}
 
-output: $  123.5,$  3456.49,$  777888.99,$  12345678,$  -5432
+### output:
+```
 
 ```
+
 ## Accounting.Money
 format any number into currency
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | symbol  |
-    | type | string |
-    | value |  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
+    |  | string  |   | 
 
+
+### example:
+```
 
 ```
-example: {{ 4999.99 | Accounting.Money("us")}}
 
-output: $4,999.99
+### output:
+```
 
 ```
+
 ## Accounting.MoneyFormat
 format any number into currency
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | symbol  |
-    | type | string |
-    | value |  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
+    |  | string  |   | 
 
+
+### example:
+```
 
 ```
-example: {{ 4999.99 | Accounting.MoneyFormat("€", 2, ".", ",")}}
 
-output: €4.999,99
+### output:
+```
 
 ```
+
 ## Accounting.NumberFormat
 format a number with custom precision and localisation
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | symbol  |
-    | type | string |
-    | value |  |
+    | name | type  | description | allow
+    | :--- | :---  | :---        | :---       |
+    |  | string  |   | 
 
+
+### example:
+```
 
 ```
-example: {{ 9876543.21 | Accounting.NumberFormat(3, " ")}}
 
-output: 9 876 543.210
+### output:
+```
 
 ```
+
 
 
