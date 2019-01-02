@@ -13,7 +13,7 @@ returns true if all elements in the list are equal
     | name | type  | description
     | :--- | :---  | :---        |
     | value | array  | 
-    | value | object  | 
+    | predicate | int|string|boolean  | 
 
 
 ```
@@ -31,7 +31,7 @@ Returns true if any of the values in the list pass the predicate truth test
     | name | type  | description
     | :--- | :---  | :---        |
     | value | array  | array list of element in input
-    | predicate | object  | predicate to test
+    | predicate | int  | predicate to test
 
 
 ```
@@ -49,7 +49,7 @@ Returns true if all of the values in the list pass the predicate truth test. Sho
     | name | type  | description
     | :--- | :---  | :---        |
     | value | array  | array list of element in input
-    | predicate | object  | predicate truth test
+    | predicate | int|string|boolean  | predicate truth test
 
 
 ```
@@ -67,7 +67,7 @@ Looks through each value in the list, returning an array of all the values that 
     | name | type  | description
     | :--- | :---  | :---        |
     | value | array  | array list of element in input
-    | filter | object  | 
+    | filter | int  | 
 
 
 ```
@@ -100,7 +100,7 @@ Get a object by index
     | name | type  | description
     | :--- | :---  | :---        |
     | value | array  | 
-    | index | number  | 
+    | index | int  | 
 
 
 ```
@@ -117,7 +117,7 @@ Initial element from array
     | name | type  | description
     | :--- | :---  | :---        |
     | value | array  | 
-    | count | number  | 
+    | count | int  | 
 
 
 ```
@@ -150,7 +150,7 @@ uses the input value as a search key in the collection passed as an argument. If
     | name | type  | description
     | :--- | :---  | :---        |
     | value | string  | 
-    | array | array  | 
+    | collection | array  | 
 
 
 ```
@@ -184,7 +184,7 @@ Returns the rest of the elements in an array. Pass an index to return the values
     | name | type  | description
     | :--- | :---  | :---        |
     | value | array  | 
-    | index | number  | 
+    | index | int  | 
 
 
 ```
@@ -201,7 +201,7 @@ Returns true if any of the values in the list pass the predicate truth test
     | name | type  | description
     | :--- | :---  | :---        |
     | value | array  | 
-    | predicate | Number|String|Boolean  | 
+    | predicate | int|string|boolean  | 
 
 
 ```
@@ -218,8 +218,8 @@ use value as index of array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | value | Number  | 
-    | List | Array  | 
+    | value | int  | 
+    | list | array  | 
 
 
 ```
