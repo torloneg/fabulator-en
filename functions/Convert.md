@@ -10,15 +10,10 @@ A handy utility for converting between quantities in different units.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | from  |
-    | type | string |
-    | value |  |
-    | title | to  |
-    | type | string |
-    | value |  |
-
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
+    |  | string  | 
 
 ```
 example: {{  1 | Convert.FromTo('l','ml')}}

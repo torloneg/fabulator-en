@@ -10,14 +10,10 @@ converts the value of one currency into another
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | from  |
-    | type | string |
-    | value |  |
-    | title | to  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
+    |  | string  | 
 
 
 ```
@@ -31,8 +27,8 @@ returns the symbol of a currency
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -46,11 +42,9 @@ TODO
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | TODO  |
-    | type | TODO |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | TODO  | 
 
 
 ```

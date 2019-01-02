@@ -10,11 +10,9 @@ Add a integer to a number
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | Number to add  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -27,11 +25,9 @@ divide a number by another number
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | Number to divide  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -44,11 +40,9 @@ return a number with a new format
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | Format string  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -62,17 +56,11 @@ returns a string based on the value of the number &#x3D;&#x3D; 1 ( singular ), &
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | singular  |
-    | type | string |
-    | value |  |
-    | title | plural  |
-    | type | string |
-    | value |  |
-    | title | undef  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
+    |  | string  | 
+    |  | string  | 
 
 
 ```
@@ -85,17 +73,11 @@ Returns strings based on the sign of the number : positive, negative,parity
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | positive  |
-    | type | string |
-    | value |  |
-    | title | negative  |
-    | type | string |
-    | value |  |
-    | title | parity  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
+    |  | string  | 
+    |  | string  | 
 
 
 ```
@@ -108,11 +90,9 @@ Subtracts a number from another number
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | Number to subtracts  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```

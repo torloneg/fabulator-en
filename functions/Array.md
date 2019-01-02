@@ -10,11 +10,9 @@ returns true if all elements in the list are equal
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | array list of element in input  |
-    | type | array |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | array  | 
 
 
 ```
@@ -29,11 +27,9 @@ Returns true if any of the values in the list pass the predicate truth test
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | array list of element in input  |
-    | type | array |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | array  | 
 
 
 ```
@@ -48,11 +44,9 @@ Returns true if all of the values in the list pass the predicate truth test. Sho
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | array list of element in input  |
-    | type | array |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | array  | 
 
 
 ```
@@ -67,8 +61,8 @@ Looks through each value in the list, returning an array of all the values that 
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -82,8 +76,8 @@ First element from array
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -97,11 +91,9 @@ Get a object by index
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | index value  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -115,8 +107,8 @@ Initial element from array
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -130,8 +122,8 @@ Last element from array
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -145,11 +137,9 @@ uses the input value as a search key in the collection passed as an argument. If
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | collection  |
-    | type | array |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | array  | 
 
 
 ```
@@ -163,11 +153,9 @@ extracting a list of property values.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | property name  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -181,11 +169,9 @@ Returns the rest of the elements in an array. Pass an index to return the values
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | index value  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -199,11 +185,9 @@ Returns true if any of the values in the list pass the predicate truth test
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | array list of element in input  |
-    | type | array |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | array  | 
 
 
 ```
@@ -218,11 +202,9 @@ use value as index of array
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | index value  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```

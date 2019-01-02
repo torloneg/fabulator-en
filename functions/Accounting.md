@@ -10,18 +10,20 @@ better rounding for floating point numbers
 
 
 **params**
-    | name | type  | description | allow
-    | :--- | :---  | :---        | :---       |
-    |  | int  | digit number  | 
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | precision | int  | digit number
 
 
 ### example:
 ```
+{{  0.615 | Accounting.Fix(2)}}
 
 ```
 
 ### output:
 ```
+0.61
 
 ```
 
@@ -30,18 +32,20 @@ format a list of values for column-display
 
 
 **params**
-    | name | type  | description | allow
-    | :--- | :---  | :---        | :---       |
-    |  | string  |   | 
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ### example:
 ```
+{{ [123.5, 3456.49, 777888.99, 12345678, -5432] | Accounting.FormatColumn("$ ")}}
 
 ```
 
 ### output:
 ```
+$  123.5,$  3456.49,$  777888.99,$  12345678,$  -5432
 
 ```
 
@@ -50,18 +54,20 @@ format any number into currency
 
 
 **params**
-    | name | type  | description | allow
-    | :--- | :---  | :---        | :---       |
-    |  | string  |   | 
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ### example:
 ```
+{{ 4999.99 | Accounting.Money("us")}}
 
 ```
 
 ### output:
 ```
+$4,999.99
 
 ```
 
@@ -70,18 +76,20 @@ format any number into currency
 
 
 **params**
-    | name | type  | description | allow
-    | :--- | :---  | :---        | :---       |
-    |  | string  |   | 
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ### example:
 ```
+{{ 4999.99 | Accounting.MoneyFormat("€", 2, ".", ",")}}
 
 ```
 
 ### output:
 ```
+€4.999,99
 
 ```
 
@@ -90,18 +98,20 @@ format a number with custom precision and localisation
 
 
 **params**
-    | name | type  | description | allow
-    | :--- | :---  | :---        | :---       |
-    |  | string  |   | 
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ### example:
 ```
+{{ 9876543.21 | Accounting.NumberFormat(3, " ")}}
 
 ```
 
 ### output:
 ```
+9 876 543.210
 
 ```
 

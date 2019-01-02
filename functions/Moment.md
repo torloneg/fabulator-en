@@ -10,11 +10,9 @@ adds any time entity to the date
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | number  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -28,8 +26,8 @@ numbers of days elapsed between the input date and today
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -43,8 +41,8 @@ numbers of years elapsed between the input date and today
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -60,11 +58,9 @@ date in extended format in the passed language as a parameter
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -82,11 +78,9 @@ date in extended format in the passed language as a parameter
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -103,11 +97,9 @@ Returns a date in compact format
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -121,11 +113,9 @@ returns the day in the language indicated as parameter
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -142,11 +132,9 @@ returns the month in letters in the language indicated as a parameter
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -163,14 +151,10 @@ Now in format string
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | string |
-    | value |  |
-    | title | format  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
+    |  | string  | 
 
 
 ```
@@ -187,11 +171,9 @@ date in extended format in the passed language as a parameter
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -208,11 +190,9 @@ Returns the date in the indicated timezone
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | timezone  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```

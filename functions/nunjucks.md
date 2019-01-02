@@ -10,8 +10,8 @@ Return the absolute value of the argument
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -24,8 +24,8 @@ Make the first letter uppercase, the rest lower case
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -38,8 +38,8 @@ Sort a dict and yield (key, value) pairs
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -59,8 +59,8 @@ Call JSON.stringify on an object and dump the result into the template. Useful f
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -73,8 +73,8 @@ Get the first item in an array or the first letter if it&#x27;s a string
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -90,8 +90,8 @@ Convert a value into a floating point number. If the conversion fails 0.0 is ret
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -104,8 +104,8 @@ Group a sequence of objects by a common attribute
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -129,8 +129,8 @@ Convert the value into an integer. If the conversion fails 0 is returned.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -143,8 +143,8 @@ Return a string which is the concatenation of the strings in a sequence
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -164,8 +164,8 @@ Get the last item in an array or the last letter if it&#x27;s a string:
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -181,8 +181,8 @@ Return the length of an array or string, or the number of keys in an object
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -196,8 +196,8 @@ Convert the value into a list. If it was a string the returned list will be a li
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -211,8 +211,8 @@ Convert string to all upper case
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -226,8 +226,8 @@ Select a random value from an array.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -245,8 +245,8 @@ If no test is specified, the attribute’s value will be evaluated as a boolean.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -259,8 +259,8 @@ Replace one item with another. The first item is the item to be replaced, the se
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -273,8 +273,8 @@ output: 123.56
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -289,8 +289,8 @@ output: fedcba
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -304,8 +304,8 @@ output: 5
 Mark the value as safe which means that in an environment with automatic escaping enabled this variable will not be escaped.
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -323,8 +323,8 @@ If no test is specified, the attribute’s value will be evaluated as a boolean.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -338,8 +338,8 @@ Slice an iterator and return a list of lists containing those items:
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -376,8 +376,8 @@ output: &lt;div class&#x3D;&quot;columwrapper&quot;&gt;
 params:
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -391,8 +391,8 @@ Analog of jinja&#x27;s striptags. If preserve_linebreaks is false (default), str
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -403,8 +403,8 @@ output:
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -418,8 +418,8 @@ Make the first letter of the string uppercase also a list of string
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -431,8 +431,8 @@ output: Foo Bar Baz
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -446,8 +446,8 @@ Truncate to 3 characters:
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -462,8 +462,8 @@ Convert the value into a list. If it was a string the returned list will be a li
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -476,8 +476,8 @@ output: f,o,o,b,a,r,
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -490,8 +490,8 @@ output: foo &lt;a href&#x3D;&quot;http://www.example.com/&quot;&gt;http://www.ex
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```

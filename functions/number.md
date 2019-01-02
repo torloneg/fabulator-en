@@ -10,11 +10,9 @@ returns an number in the language specified as an argument
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | list |
-    | value | en,it |
+     | name | type  | description
+     | :--- | :---  | :---        |
+     |  | list  | 
 
 
 ```
@@ -27,11 +25,9 @@ returns an ordinal number in the language specified as an argument
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | language  |
-    | type | list |
-    | value | en,it |
+     | name | type  | description
+     | :--- | :---  | :---        |
+     |  | list  | 
 
 
 ```

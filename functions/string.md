@@ -10,8 +10,8 @@ Remove any underscores or dashes and convert a string into camel casing.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -24,8 +24,8 @@ Convert all characters into uppercase letters
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -38,11 +38,9 @@ Removes prefix from start of string.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | part of string  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -55,11 +53,9 @@ Removes suffix from end of string
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | part of string  |
-    | type | string |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | string  | 
 
 
 ```
@@ -72,8 +68,8 @@ Converts all adjacent whitespace characters to a single space.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -86,8 +82,8 @@ Returns a converted camel cased string into a string delimited by dashes.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -100,8 +96,8 @@ Decodes HTML entities into their string representation.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -114,8 +110,8 @@ Escapes the html.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -128,11 +124,9 @@ Return the substring denoted by n positive left-most characters.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | index  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -145,11 +139,9 @@ Returns a string repeated n times.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | number of repeater  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -162,11 +154,9 @@ Return the substring denoted by n positive right-most characters.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | index position  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -179,11 +169,9 @@ replace last right char
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | new char to replace  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -196,8 +184,8 @@ Converts the text into a valid url slug. Removes accents from Latin characters.
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -210,8 +198,8 @@ Converts a a logical truth string to boolean. That is: true, 1, &#x27;true&#x27;
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -224,11 +212,9 @@ Return the float value, wraps parseFloat
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | precision  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -241,11 +227,9 @@ Return the float value, wraps parseInt
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title | precision  |
-    | type | int |
-    | value |  |
+    | name | type  | description
+    | :--- | :---  | :---        |
+    |  | int  | 
 
 
 ```
@@ -267,8 +251,8 @@ output: &lt;div&gt;hi&lt;/div&gt;
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
@@ -280,8 +264,8 @@ wrapHTML helps to avoid concatenation of element with string. the string will be
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
+    | name | type  | description
+    | :--- | :---  | :---        |
 
 
 ```
