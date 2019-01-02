@@ -21,11 +21,11 @@ executes a geolocated query on a MongoDB collection
     | sort | editor  |   |
 
 
-```
-example:
-TODO
 
-output:
-TODO
+###example:
+```TODO
 ```
+output:
+```TODO```
+
 
