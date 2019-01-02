@@ -5,14 +5,20 @@ executes a geolocated query on a MongoDB collection
 
 
 **params**
-    |  |  |
-    | :--- | :--- |
-    | title |   |
-    | type |  |
-    | value |  |
-    | title |   |
-    | type |  |
-    | value |  |
+    | name | type  | description |
+    | :--- | :---  | :---        |
+    | url | string  | connection string  |
+    | collection | string  | collection name  |
+    | query | string  | query in mngodb format or a variable name with the query  |
+    | query_geo | editor  |   |
+    | latitude | editor  |   |
+    | longitude | editor  |   |
+    | minDistance | editor  |   |
+    | maxDistance | editor  |   |
+    | skip | editor  |   |
+    | limit | editor  |   |
+    | select | editor  |   |
+    | sort | editor  |   |
 
 
 ```
