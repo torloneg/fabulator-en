@@ -23,10 +23,14 @@ executes a geolocated query on a MongoDB collection
 
 
 ### example:
-```TODO
+```
+TODO
+
 ```
 
 ### output:
-```TODO```
+```
+TODO
+```
 
 
