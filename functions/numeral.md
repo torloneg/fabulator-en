@@ -44,7 +44,8 @@ return a number with a new format
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
+    | input | string  | 
+    | format | string  | 
 
 
 ```
@@ -60,9 +61,10 @@ returns a string based on the value of the number &#x3D;&#x3D; 1 ( singular ), &
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
-    |  | string  | 
-    |  | string  | 
+    | input | string  | 
+    | singular | string  | 
+    | plural | string  | 
+    | undef | string  | 
 
 
 ```
@@ -77,9 +79,10 @@ Returns strings based on the sign of the number : positive, negative,parity
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | string  | 
-    |  | string  | 
-    |  | string  | 
+    | input | string  | 
+    | positive | string  | 
+    | negative | string  | 
+    | parity | string  | 
 
 
 ```
@@ -94,7 +97,8 @@ Subtracts a number from another number
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    |  | int  | 
+    | input | string  | 
+    | int | int  | 
 
 
 ```

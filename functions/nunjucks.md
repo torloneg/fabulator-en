@@ -12,6 +12,7 @@ Return the absolute value of the argument
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | int  | 
 
 
 ```
@@ -26,6 +27,7 @@ Make the first letter uppercase, the rest lower case
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -40,6 +42,7 @@ Sort a dict and yield (key, value) pairs
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
 
 
 ```
@@ -61,6 +64,7 @@ Call JSON.stringify on an object and dump the result into the template. Useful f
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | object  | 
 
 
 ```
@@ -75,6 +79,7 @@ Get the first item in an array or the first letter if it&#x27;s a string
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | object  | 
 
 
 ```
@@ -92,6 +97,7 @@ Convert a value into a floating point number. If the conversion fails 0.0 is ret
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -106,6 +112,7 @@ Group a sequence of objects by a common attribute
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
 
 
 ```
@@ -131,6 +138,7 @@ Convert the value into an integer. If the conversion fails 0 is returned.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -145,6 +153,9 @@ Return a string which is the concatenation of the strings in a sequence
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
+    | separator | string  | 
+    | attribute | string  | 
 
 
 ```
@@ -166,6 +177,7 @@ Get the last item in an array or the last letter if it&#x27;s a string:
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
 
 
 ```
@@ -183,6 +195,7 @@ Return the length of an array or string, or the number of keys in an object
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
 
 
 ```
@@ -198,6 +211,7 @@ Convert the value into a list. If it was a string the returned list will be a li
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -213,6 +227,7 @@ Convert string to all upper case
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -228,6 +243,7 @@ Select a random value from an array.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
 
 
 ```
@@ -247,6 +263,7 @@ If no test is specified, the attribute’s value will be evaluated as a boolean.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
 
 
 ```
@@ -261,6 +278,7 @@ Replace one item with another. The first item is the item to be replaced, the se
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -275,6 +293,7 @@ output: 123.56
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -291,6 +310,8 @@ output: fedcba
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | float  | 
+    | digit | int  | 
 
 
 ```
@@ -306,6 +327,7 @@ Mark the value as safe which means that in an environment with automatic escapin
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -325,6 +347,7 @@ If no test is specified, the attribute’s value will be evaluated as a boolean.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
 
 
 ```
@@ -340,6 +363,8 @@ Slice an iterator and return a list of lists containing those items:
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
+    | value | int  | 
 
 
 ```
@@ -373,11 +398,12 @@ output: &lt;div class&#x3D;&quot;columwrapper&quot;&gt;
 
 ```
 ## string
-params:
+
 
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | number  | 
 
 
 ```
@@ -393,6 +419,7 @@ Analog of jinja&#x27;s striptags. If preserve_linebreaks is false (default), str
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | number  | 
 
 
 ```
@@ -405,6 +432,7 @@ output:
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | array  | 
 
 
 ```
@@ -420,6 +448,7 @@ Make the first letter of the string uppercase also a list of string
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -433,6 +462,7 @@ output: Foo Bar Baz
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -441,13 +471,18 @@ example: {{ "  foo " | trim }}
 output: foo
 ```
 ## truncate
-The length is specified with the first parameter which defaults to 255. If the second parameter is true the filter will cut the text at length. Otherwise it will discard the last word. If the text was in fact truncated it will append an ellipsis sign (&quot;...&quot;). A different ellipsis sign than &quot;(...)&quot; can be specified using the third parameter.
+The length is specified with the first parameter which defaults to 255. If the second parameter is true the filter will cut the text at length.
+Otherwise it will discard the last word. If the text was in fact truncated it will append an ellipsis sign (&quot;...&quot;). A different ellipsis sign than &quot;(...)&quot; can be specified using the third parameter.
 Truncate to 3 characters:
 
 
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
+    | nchar | string  | 
+    | lastword | string  | 
+    | append | string  | 
 
 
 ```
@@ -458,18 +493,19 @@ foo ba ?
 
 ```
 ## upper
-Convert the value into a list. If it was a string the returned list will be a list of characters.
+Convert a string in upper case
 
 
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
-example: {% for i in "foobar" | list %}{{ i }},{% endfor %}
+example: {{ "my name" | upper }}
 
-output: f,o,o,b,a,r,
+output: MY NAME
 
 ```
 ## urlize
@@ -478,6 +514,7 @@ output: f,o,o,b,a,r,
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
@@ -492,6 +529,7 @@ output: foo &lt;a href&#x3D;&quot;http://www.example.com/&quot;&gt;http://www.ex
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
+    | input | string  | 
 
 
 ```
