@@ -1,57 +1,41 @@
-# JSON TEST
+# TAG RANGE BLOCK
 
-Returns a json object indicating a specific location in the collection or the "last" and "first" strings
+There are tags to use to write portions of text if the value is within a range (min/mx) or outside these limits
  
 ## TEMPLATE
 
 ```
   
-returns a json object indicating a specific location in the collection or the "last" and "first" strings
+Internal value at min - max range
+  {% set valueIn = 5 %}
   
-Collection :
+  Example if **{{valueIn}}** is btween 1 and 6 show a text :
+ {% inRangeBlock value=valueIn,min=1,max=6 %}
+   *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum id dui non venenatis. Integer sit amet maximus velit. Morbi quis egestas lectus, feugiat aliquam ex.*
+ {% else %}
+    Vivamus ultrices sem ut orci semper, sed convallis ex suscipit. 
+ {% endinRangeBlock %}
 
- {{ data.collection | dump }}
- 
- output :
- 
- **pos = 3**
- {% set pos = 3 %}
- {% index value=data.collection,index=pos %}
-  {{index | dump }}
- {% endindex %}
- 
-  **pos = 1**
- {% set pos = 1 %}
- {% index value=data.collection,index=pos %}
-  {{index | dump }}
- {% endindex %}
- 
-   **pos = "last"**
- {% set pos = "last" %}
- {% index value=data.collection,index=pos %}
-  {{index | dump }}
- {% endindex %}
+external value at min - max range
+
+ {% outRangeBlock value=valueIn,min=1,max=6 %}
+   *Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum id dui non venenatis. Integer sit amet maximus velit. Morbi quis egestas lectus, feugiat aliquam ex.*
+ {% else %}
+  *Vivamus ultrices sem ut orci semper, sed convallis ex suscipit.*
+ {% endoutRangeBlock %}
 
 ```
 
 ## RESULT
 
-returns a json object indicating a specific location in the collection or the "last" and "first" strings
+There are tags to use to write portions of text if the value is within a range (min/mx) or outside these limits
 
-Collection :
+Internal value at min - max range
 
-[{"itemid":"1092","description":"ELEMENT #1","date":"2017-08-09"},{"itemid":"2192","description":"ELEMENT #2","date":"2017-07-08"},{"item_id":"2193","description":"ELEMENT #3","date":"2018-07-08"}]
+Example if 5 is btween 1 and 6 show a text :
 
-output :
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vestibulum id dui non venenatis. Integer sit amet maximus velit. Morbi quis egestas lectus, feugiat aliquam ex.
 
-pos = 3
+external value at min - max range
 
-{"item_id":"2193","description":"ELEMENT #3","date":"2018-07-08"}
-
-pos = 1
-
-{"item_id":"1092","description":"ELEMENT #1","date":"2017-08-09"}
-
-pos = "last"
-
-{"item_id":"2193","description":"ELEMENT #3","date":"2018-07-08"}
+Vivamus ultrices sem ut orci semper, sed convallis ex suscipit.
