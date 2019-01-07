@@ -1,26 +1,23 @@
-
-# TAG http
+# http
 
 call a remote url
 
-
 **params**
-    | name | type  | description | allow
-    | :--- | :---  | :---        | :---       |
-    | url | editor  |   | 
-    | context | editor  |   | 
 
+| name | type | description | allow |
+| :--- | :--- | :--- | :--- |
+| url | editor |  |  |
+| context | editor |  |  |
 
+## example:
 
-### example:
-```
-TODO
-
-```
-
-### output:
-```
+```text
 TODO
 ```
 
+## output:
+
+```text
+TODO
+```
 

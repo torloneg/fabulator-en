@@ -1,19 +1,17 @@
-
-# TAG for
+# for
 
 for iterates over arrays and dictionaries.
 
-
 **params**
-    | name | type  | description | allow
-    | :--- | :---  | :---        | :---       |
-    | var | string  | varible  | 
-    | collection | string  | collection or array  | 
 
+| name | type | description | allow |
+| :--- | :--- | :--- | :--- |
+| var | string | varible |  |
+| collection | string | collection or array |  |
 
+## example:
 
-### example:
-```
+```text
 {% for item in items %}
   <li>{{ item.title }}</li>
 
@@ -21,13 +19,11 @@ for iterates over arrays and dictionaries.
   <li>This would display if the 'item' collection were empty</li>
 
 {% endfor %}
-
 ```
 
-### output:
-```
+## output:
+
+```text
 list
-
 ```
-
 
