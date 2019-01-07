@@ -1,12 +1,10 @@
-# TAG MONGODB
-
 Example of search on mongodb
 
-#### **MongoDB query** 
+## **MongoDB query** 
 method queries a collection by setting a query in the MongoDB format.
 Search all cities in the region abruzzo in italy
 
-## TEMPLATE
+### TEMPLATE
 
 ```
 {% set query_mongodb = "{ \"district\": \"abruzzo\" }" %}
@@ -21,21 +19,21 @@ Search all cities in the region abruzzo in italy
 
 ```
 
-## RESULT
+### RESULT
 
 * Chieti : MIN ( 6°C ) MAX ( 16°C )
 * L'aquila : MIN ( 3°C ) MAX ( 12°C )
 * Pescara : MIN ( 7°C ) MAX ( 18°C )
 * Teramo : MIN ( 5°C ) MAX ( 12°C )
 
-#### **MongoDB geospatial query**
+## **MongoDB geospatial query**
 It is possible to make geospatial queries on data stored on a MongoDB. In this case the earthquakes are searched by setting the position in longitude and latitude
 
 ```
 {"$and":[{"loc":{"$near":{"$geometry":{"type":"Point","coordinates":[13.3157262,42.3633634]},"$minDistance":0,"$maxDistance":100000}}},{"magnitude":{"$gte":5}}]}
 ```
     
-## TEMPLATE
+### TEMPLATE
 
 ```
 {% DB_MongoNear url=$DATABASE_MONGODB,collection="Quake_History", latitude=data.geometry.coordinates.latitude, longitude=data.geometry.coordinates.longitude , query="{\"magnitude\": { \"$gte\": 5.0 } }",skip=0,limit=10,sort="{\"time\": 1}",select="{}",context="items" %}
@@ -53,7 +51,7 @@ the result obtained
 {% End_DB_MongoNear %}
 ```
 
-## RESULT
+### RESULT
 
 * 2 Km Sw L'aquila (aq) - magnitudo 6.1 Richter - 06/04/2009 03:32:40
 

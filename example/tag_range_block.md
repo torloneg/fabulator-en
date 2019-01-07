@@ -1,8 +1,6 @@
-# TAG RANGE BLOCK
-
 There are tags to use to write portions of text if the value is within a range (min/mx) or outside these limits
  
-## TEMPLATE
+### TEMPLATE
 
 ```
   
@@ -26,7 +24,7 @@ external value at min - max range
 
 ```
 
-## RESULT
+### RESULT
 
 There are tags to use to write portions of text if the value is within a range (min/mx) or outside these limits
 

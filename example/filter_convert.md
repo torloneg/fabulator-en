@@ -1,11 +1,11 @@
-## CONVERT
+
 Examples of convert filter
 
 Conversion functions are performed using the convert-units library.
 [https://github.com/ben-ng/convert-units][md-convert-units].
 
 
-## TEMPLATE
+### TEMPLATE
 ```
 * Convert from liter to millilitre: **{{data.units.unit_less_1}} liter** is **{{data.units.unit_less_1 | Convert.FromTo('l','ml')}} millilitre**
 * Convert from kilogramme to libre : **{{data.units.unit_more_1}} kg** is **{{data.units.unit_more_1 | Convert.FromTo('kg','lb') | round(4) }} libre**
@@ -17,7 +17,7 @@ Conversion functions are performed using the convert-units library.
 ```
 
 
-## RESULT
+### RESULT
 * Convert from liter to millilitre: 0.543 liter is 543 millilitre
 * Convert from kilogramme to libre : 1.232 kg is 2.7161 libre
 * Convert from meters to kilometers : 123.093 meters is 0.1231 kilometers

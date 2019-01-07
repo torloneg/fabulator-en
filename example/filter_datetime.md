@@ -1,9 +1,8 @@
-﻿## DATE TIME
-
+﻿
 Several functions have been realized to obtain information in natural language starting from the dates present in the json
 
  
-## TEMPLATE
+### TEMPLATE
 ```
 * It's been {{data.time | Moment.AgeYear}} years since the  {{data.time | Moment.Format('it','YYYY')}}
 * It's been {{data.time | Moment.AgeDays}} days from {{data.time | Moment.Format('en','LL')}}
@@ -30,7 +29,7 @@ A global variable with the date and time of the server is available
 ```
 
 
-## RESULT
+### RESULT
 * It's been 4 years since the 2014
 * It's been 1582 days from September 8, 2014
 

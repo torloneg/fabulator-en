@@ -1,9 +1,8 @@
-﻿## CONDITION
-
+﻿
 These functions allow you to toggle natural language text based on the content of values 
 
  
-## TEMPLATE
+### TEMPLATE
 ```
 Condition on number : {{ data.number | Condition.Value([{value:0,text:'zero'},{value:1,text:'one'},{value:2,text:'two'},{value:3,text:'three'}]) }}
 
@@ -13,7 +12,7 @@ Condition on range : {{ 1 | Condition.Range([{value:'0|5',text:'from 1 to 5'},{v
 ```
 
 
-## RESULT
+### RESULT
 Condition on number : three
 
 Condition on range : from 1 to 5

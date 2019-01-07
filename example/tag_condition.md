@@ -1,9 +1,7 @@
-# TAG CONDITION
-
-#### IF
+### IF
 if tests a condition and lets you selectively display content. It behaves exactly as javascript's if behaves.
 
-## TEMPLATE
+### TEMPLATE
 
 ```
 {% if data.string == 'Feature'  %}
@@ -24,7 +22,7 @@ You can specify alternate conditions with elif (or elseif, which is simply an al
 
 ```
 
-## RESULT
+### RESULT
 
 if tests a condition and lets you selectively display content. It behaves exactly as javascript's if behaves.
 
@@ -36,7 +34,7 @@ You can specify alternate conditions with elif (or elseif, which is simply an al
 
 Ex.: data.string == 'Feature'
 
-#### Comparisons
+## Comparisons
 
 * ==
 * ===

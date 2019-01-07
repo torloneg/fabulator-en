@@ -1,9 +1,9 @@
-## MONEY
+
 Currency conversion functions are based on data in configuration and represent the conversion rate 
 
 Example of currency conversion :
 
-## TEMPLATE
+### TEMPLATE
 ```
 * Money in GBP **{{data.accounting.money_1}}** converted into **{{ data.accounting.money_1| Money.Convert("GBP","USD") | Accounting.NumberFormat(2, ".", ",")}}** american dollars.
 
@@ -18,7 +18,7 @@ Example of currency conversion :
 ```
 
 
-## RESULT
+### RESULT
 * Money in GBP 12345678 converted into 16.135.820,99 american dollars.
 
 * The last price of BASF shares is 0.615 Euro (0,72 $)

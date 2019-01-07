@@ -1,8 +1,6 @@
-# TAG ITERATOR
-
 for iterates over arrays and dictionaries.
 
-## TEMPLATE
+### TEMPLATE
 
 ```
 Elements taken from an array or collection
@@ -33,7 +31,7 @@ Inside loops, you have access to a few special variables:
 
 ```
 
-## RESULT
+### RESULT
 
 Elements taken from an array or collection
 

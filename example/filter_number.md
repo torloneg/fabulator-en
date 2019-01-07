@@ -1,10 +1,9 @@
-## NUMBER
 
 Examples of transformation of numbers into natural language
 
-### ITALIAN
+## ITALIAN
 
-## TEMPLATE
+### TEMPLATE
 ```
 the number **1** is transformed into Italian language **{{ 1 | Numeral.OrdinalToLanguage('it') }}** or **{{ 1 | Numeral.OrdinalToLanguage('it') | String.rightReplaceChar("a")}}**
 
@@ -26,7 +25,7 @@ Pluralize: {{data.number | Numeral.Pluralize('singolare','plurale','nullo')}}
 ```
 
 
-## RESULT
+### RESULT
 the number 1 is transformed into Italian language primo or prima
 
 the number 3 is transformed into Italian language tre
@@ -42,8 +41,8 @@ numbers with positive or negative sign can be used to describe situations in nat
 * 0 is parità
 * Pluralize: plurale
 
-### ENGLISH
-## TEMPLATE
+## ENGLISH
+### TEMPLATE
 ```
 NumberToLanguage **(EN)**: **{{data.number}}** is **{{data.number | Numeral.NumberToLanguage('en')}}**, **{{data.number_0}}** is **{{data.number_0 | Numeral.NumberToLanguage('en')}}**
 
@@ -59,7 +58,7 @@ Pluralize: {{ data.number_1 }} is {{ data.number_1 | Numeral.Pluralize('singular
 
 ```
 
-## RESULT
+### RESULT
 NumberToLanguage (EN): 3 is three, 0 is zero
 
 * 1 is positive

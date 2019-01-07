@@ -1,4 +1,3 @@
-# JSON
 
 The examples refer to a json with various types of data.
 

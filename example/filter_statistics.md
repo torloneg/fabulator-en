@@ -1,8 +1,7 @@
-## STATISTICS
 Examples of statistical filter  using the convert-units library.
 [https://simplestatistics.org/][md-statistical-simple].
 
-## TEMPLATE
+### TEMPLATE
 ```
  MIN : minimum of {{data.array_number | dump }} is **{{data.array_number | Stats.Min}}**
  
@@ -17,7 +16,7 @@ Examples of statistical filter  using the convert-units library.
 ```
 
 
-## RESULT
+### RESULT
 MIN : minimum of [1,2,3,4,5,6,7,8,9,10] is 1
 
 MAX : maximum of [1,2,3,4,5,6,7,8,9,10] is 10

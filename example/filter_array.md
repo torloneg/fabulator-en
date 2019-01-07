@@ -1,9 +1,7 @@
-﻿## ARRAY
-
-Examples of date and time transformation
+﻿Examples of date and time transformation
 
  
-## TEMPLATE
+### TEMPLATE
 ```
 random array int : {{ [1,2,3,4,5,6,7,8,9] | random }}
 
@@ -25,7 +23,7 @@ test array index =10 : {{ [2,2,2,0]| Array.Index(10) }}
 ```
 
 
-## RESULT
+### RESULT
 random array int : 8
 
 random array string : second

@@ -1,10 +1,8 @@
-# TAG - INDEX
-
 Returns a json object indicating a specific location in the collection or the "last" and "first" strings.
 
 The [index](/fabulator-en/example/tag_index) tag is used.
 
-## TEMPLATE
+### TEMPLATE
 
 ```
 
@@ -35,7 +33,7 @@ Collection :
  {% endindex %}
 ```
 
-## RESULT
+### RESULT
 
 returns a json object indicating a specific location in the collection or the "last" and "first" strings
 

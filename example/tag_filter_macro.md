@@ -1,9 +1,7 @@
-# TAG MACRO / FILTER
-
-#### MACRO
+## MACRO
 macro allows you to define reusable chunks of content. It is similar to a function in a programming language.  
 
-## TEMPLATE
+### TEMPLATE
 
 ```
 {% macro Debug(p) %}
@@ -32,7 +30,7 @@ Example:
 
 ```
 
-## RESULT
+### RESULT
 Simple macro for debug :
 
 Show json content : {"firstname":"jhon","lastname":"smith","sex":"M"}
@@ -45,10 +43,10 @@ Ms. Rose Smith
 
 --
 
-#### FILTER
+## FILTER
 A filter block allows you to call a filter with the contents of the block. Instead passing a value with the | syntax, the render contents from the block will be passed.
 
-## TEMPLATE
+### TEMPLATE
 
 ```
 applies the **title** function to the contents of the block
@@ -63,7 +61,7 @@ may the force be with you
 {% endfilter %}
 ```
 
-## RESULT
+### RESULT
 
 applies the title function to the contents of the block
 
