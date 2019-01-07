@@ -51,4 +51,8 @@
 * [STATISTICS](example/filter_statistics.md)
 * [CONVERT](example/filter_convert.md)
 * [NUMBER](example/filter_number.md)
+* [STRING](example/filter_string.md)
+* [CONDITION](example/filter_condition.md)
+* [ARRAY](example/filter_array.md)
+* [DATE TIME](example/filter_datetime.md)
 
