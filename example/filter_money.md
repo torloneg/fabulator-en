@@ -32,51 +32,18 @@ Example of currency conversion :
 
 
 ###JSON snippet
-   
-   ```
-    "accounting": {
-	    "money_1":12345678,
-	    "money_2":-500000,
-	    "money_3":4999.99,
-	    "money_4":5318008,
-	    "money_5":0.615
-	    
-	}
-    ```
+
+```
+"accounting": {
+	"money_1":12345678,
+	"money_2":-500000,
+	"money_3":4999.99,
+	"money_4":5318008,
+	"money_5":0.615
+	
+}
+```
 	 
 	 
 	 
 	 
-## TEMPLATE
-
-```
-
-{% set username='fabulator'%}
-**{{ username }}**
-
-This looks up username from the context and displays it. Variable names can have dots in them which lookup properties, just like javascript. You can also use the square bracket syntax.
-
-* {{ data.string_1 }}
-* {{ data["string_1"] }}
-```
-
-## RESULT
-
-fabulator
-
-This looks up username from the context and displays it. Variable names can have dots in them which lookup properties, just like javascript. You can also use the square bracket syntax.
-
-this is a string
-this is a string
-
-#### FILTERS
-Filters are essentially functions that can be applied to variables. They are called with a pipe operator (|) and can take arguments.
-
-```
-* {{ data.string_1 | title }}
-* {{ data.string_1 | replace("string", "**string**") | capitalize }}
-```
-
-## RESULT
-This Is A String
-This is a string
