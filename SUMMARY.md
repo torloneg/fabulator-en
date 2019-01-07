@@ -33,4 +33,5 @@
 ## EXAMPLE
 
 * [JSON](example/test_json.md)
-
+### TAG
+* [INDEX](example/tag_index.md)
