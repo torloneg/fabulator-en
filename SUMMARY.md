@@ -30,12 +30,23 @@
 * [Statistics](functions/statistics.md)
 * [Utility](functions/index.md)
 
-## EXAMPLE
+## EXAMPLE - JSON
 
 * [JSON](example/test_json.md)
+
+## EXAMPLE - TAGS
 * [TAG - INDEX](example/tag_index.md)
 * [TAG - RANGE BLOCK](example/tag_range_block.md)
 * [TAG - ITERATORS](example/tag_iterators.md)
 * [TAG - CONDITION](example/tag_condition.md)
 * [TAG - MONGODB](example/tag_mongodb.md)
 * [TAG - MACRO - FILTER](example/tag_filter_macro.md)
+
+## EXAMPLE - VARIABLES
+* [VARIABLES](example/filter_variables.md)
+
+## EXAMPLE - FUNCTIONS
+* [MONEY](example/filter_variables.md)
+
+
+
