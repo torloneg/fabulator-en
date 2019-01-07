@@ -8,6 +8,3 @@ In Fabulator, templates can be created using Tags and functions, tags are comple
 This documentation may change in the coming months
 {% endhint %}
 
-
-
-

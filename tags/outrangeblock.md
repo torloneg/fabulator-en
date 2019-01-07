@@ -1,6 +1,6 @@
-# inRangeBlock
+# outRangeBlock
 
-shows the text in the main block if the value is within the range min,max
+shows the text in the main block if the value is external in the range min,max
 
 **params**
 
@@ -13,18 +13,16 @@ shows the text in the main block if the value is within the range min,max
 
 ```text
 {% set valueIn = 5 %}
-{% inRangeBlock value=valueIn,min=1,max=6 %}
+{% outRangeBlock value=valueIn,min=1,max=6 %}
   BLOCK
 
-{% else %}
-  BLOCK ELSE
-
-{% endinRangeBlock %}
+{% else %}  ELSE BLOCK
+{% endoutRangeBlock %}
 ```
 
 ## output:
 
 ```text
-BLOCK
+ELSE BLOCK
 ```
 
