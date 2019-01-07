@@ -53,17 +53,16 @@ The server time is 7 January 2019 12:18 in english and 7 gennaio 2019 alle ore 1
 * Time it: 12 e 18
 * Time en: 12:18 
 
-```
 
 
 ###JSON snippet
 
 ```
- {
-    	"string": "Feature",
-    	"time": "2014-09-08T04:49:20Z",
-    	"date2year": "2014-01-01T04:49:20Z"
-        }
+{
+"string": "Feature",
+"time": "2014-09-08T04:49:20Z",
+"date2year": "2014-01-01T04:49:20Z"
+}
 
 ```
 	 

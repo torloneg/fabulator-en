@@ -18,8 +18,6 @@ Condition on number : three
 
 Condition on range : from 1 to 5
 
-```
-
 
 ###JSON snippet
 

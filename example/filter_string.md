@@ -1,9 +1,7 @@
-﻿## STRING
-
-Examples of string filter
+﻿Examples of string filter
 
  
-## TEMPLATE
+###TEMPLATE
 ```
 * upper a string as *{{data.string}}* in **{{data.string | upper}}**
 
@@ -18,7 +16,7 @@ Examples of string filter
 ```
 
 
-## RESULT
+###RESULT
 * upper a string as Feature in FEATURE
 
 * capitalize the string jhon smith as Jhon Smith
@@ -31,9 +29,9 @@ Examples of string filter
 
 
 
-### CONVERT
+## CONVERT
 
-## TEMPLATE
+### TEMPLATE
 ```
 Convert string in boolean or integer
 
@@ -48,7 +46,7 @@ Convert string in boolean or integer
 
 ```
 
-## RESULT
+###RESULT
 to Boolean TRUE: true / true
 
 to Boolean FALSE : false / false

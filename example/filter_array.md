@@ -42,7 +42,6 @@ test array index =0 : 2
 
 test array index =10 :
 
-```
 
 
 ###JSON snippet
