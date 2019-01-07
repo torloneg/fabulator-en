@@ -48,5 +48,7 @@
 ## EXAMPLE - FUNCTIONS
 * [MONEY](example/filter_money.md)
 * [ACCOUNTING](example/filter_accounting.md)
-
+* [STATISTICS](example/filter_statistics.md)
+* [CONVERT] (example/filter_convert.md)
+* [NUMBER] (example/filter_number.md)
 
