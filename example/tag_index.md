@@ -2,8 +2,6 @@
 
 Returns a json object indicating a specific location in the collection or the "last" and "first" strings.
 
-The [index ](https://torloneg.gitbook.io/fabulator-en/tags/index)tag is used
-
 ## TEMPLATE
 
 ```text
