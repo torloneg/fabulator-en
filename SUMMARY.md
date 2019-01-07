@@ -38,3 +38,4 @@
 * [TAG - ITERATORS](example/tag_iterators.md)
 * [TAG - CONDITION](example/tag_condition.md)
 * [TAG - MONGODB](example/tag_mongodb.md)
+* [TAG - MACRO - FILTER](example/tag_filter_macro.md)
