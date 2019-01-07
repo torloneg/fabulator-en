@@ -46,7 +46,7 @@
 * [VARIABLES](example/filter_variables.md)
 
 ## EXAMPLE - FUNCTIONS
-* [MONEY](example/filter_variables.md)
-
+* [MONEY](example/filter_money.md)
+* [ACCOUNTING](example/filter_accounting.md)
 
 
