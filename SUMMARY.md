@@ -1,6 +1,8 @@
 # Table of contents
 
 * [Fabulator](README.md)
+## API
+* [ENDPOINT](api/swagger.md)
 
 ## TAGS
 
