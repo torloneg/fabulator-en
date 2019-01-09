@@ -1,13 +1,9 @@
 Fabulator API
 =============
-Endpoint Fabulator project
+Endpoint Sentence
 
 **Version:** 1.0.0
 
-**Contact information:**  
-Torlone Gianfranco  
-https://twitter.com/torloneg  
-torloneg@gmail.com  
 
 ### Security
 ---

@@ -1,15 +1,6 @@
 Fabulator API
 =============
-Endpoint Fabulator project
-
-**Version:** 1.0.0
-
-**Contact information:**  
-Torlone Gianfranco  
-https://twitter.com/torloneg  
-torloneg@gmail.com  
-
-
+Endpoint Model
 
 ### Models
 ---
