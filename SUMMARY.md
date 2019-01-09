@@ -1,8 +1,17 @@
 # Table of contents
 
 * [Fabulator](README.md)
+
 ## API
-* [ENDPOINT](api/swagger.md)
+* [USER](api/user.md)
+* [DOMAIN](api/domain.md)
+* [RULE](api/rule.md)
+* [SCHEMA](api/schema.md)
+* [EXAMPLE](api/example.md)
+* [SENTENCE](api/sentence.md)
+* [PARSER](api/parser.md)
+* [MODEL](api/model.md)
+
 
 ## TAGS
 
