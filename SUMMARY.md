@@ -3,6 +3,7 @@
 * [Fabulator](README.md)
 
 ## API
+* [INFO](api/index.md)
 * [USER](api/user.md)
 * [DOMAIN](api/domain.md)
 * [RULE](api/rule.md)
