@@ -18,7 +18,7 @@ better rounding for floating point numbers
 
 ### example:
 ```
-{{  0.615 | Accounting.Fix(2)}}
+{{  0.611 | Accounting.Fix(2)}}
 
 ```
 
