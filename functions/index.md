@@ -12,7 +12,7 @@ return the attribute value
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | object  | object
+    | input | object  | input value received
     | attribute | string  | value  name of attribute of json object
 
 ```
@@ -29,8 +29,8 @@ return the attribute value selected from a jsonpath path
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | object  | 
-    | path | string  | 
+    | input | object  | input value received
+    | path | string  | string in jsonpath format
 
 ```
 example: 

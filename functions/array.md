@@ -49,7 +49,7 @@ Returns true if all of the values in the list pass the predicate truth test. Sho
     | name | type  | description
     | :--- | :---  | :---        |
     | input | array  | input value received as array
-    | predicate | int|string|boolean  | predicate truth test
+    | predicate | int,string,boolean  | predicate truth test
 
 
 ```
@@ -201,7 +201,7 @@ Returns true if any of the values in the list pass the predicate truth test
     | name | type  | description
     | :--- | :---  | :---        |
     | input | array  | input value received
-    | predicate | int|string|boolean  | predicate truth test
+    | predicate | int,string,boolean  | predicate truth test
 
 
 ```

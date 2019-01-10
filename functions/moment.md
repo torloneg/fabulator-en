@@ -12,10 +12,10 @@ adds any time entity to the date
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | date time
-    | int | string  | 
-    | what | string  | 
-    | format | string  | 
+    | input | string  | input value received
+    | int | string  | number of unit to add
+    | what | string  | d for day, m for month, y for year
+    | format | string  | format date
 
 
 ```
@@ -31,7 +31,7 @@ numbers of days elapsed between the input date and today
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -47,7 +47,7 @@ numbers of years elapsed between the input date and today
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -65,8 +65,8 @@ date in extended format in the passed language as a parameter
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | language | string  | 
+    | input | string  | input value received
+    | language | string  | *en* for english or *it* for italian
 
 
 ```
@@ -86,7 +86,7 @@ date in extended format in the passed language as a parameter
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | language | string  | 
 
 
@@ -106,7 +106,7 @@ Returns a date in compact format
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | language | string  | 
     | format | string  | 
 
@@ -124,7 +124,7 @@ returns the day in the language indicated as parameter
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | language | string  | 
 
 
@@ -144,7 +144,7 @@ returns the month in letters in the language indicated as a parameter
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | language | string  | 
 
 
@@ -164,7 +164,7 @@ Now in format string
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | language | string  | 
     | format | string  | 
 
@@ -185,7 +185,7 @@ date in extended format in the passed language as a parameter
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | language | string  | 
 
 
@@ -205,7 +205,7 @@ Returns the date in the indicated timezone
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | timezone | string  | 
     | format | string  | 
 

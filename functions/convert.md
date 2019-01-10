@@ -12,9 +12,9 @@ A handy utility for converting between quantities in different units.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | float  | 
-    | from | string  | 
-    | to | string  | 
+    | input | float  | input value received
+    | from | string  | unit of measurement origin
+    | to | string  | unit of measurement destination
 
 ```
 example: {{  1 | Convert.FromTo('l','ml')}}
