@@ -12,8 +12,8 @@ Add a integer to a number
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | value | int  | 
+    | input | string  | input value received
+    | value | int  | value to add
 
 
 ```
@@ -28,8 +28,8 @@ divide a number by another number
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | value | int  | 
+    | input | string  | input value received
+    | value | int  | value to divide
 
 
 ```
@@ -44,8 +44,8 @@ return a number with a new format
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | format | string  | 
+    | input | string  | input value received
+    | format | string  | numeric format string
 
 
 ```
@@ -61,10 +61,10 @@ returns a string based on the value of the number &#x3D;&#x3D; 1 ( singular ), &
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | singular | string  | 
-    | plural | string  | 
-    | undef | string  | 
+    | input | string  | input value received
+    | singular | string  | string if value is equal to 1
+    | plural | string  | string if value is greater than 1
+    | undef | string  | string if value is indefinite or zero
 
 
 ```
@@ -79,10 +79,10 @@ Returns strings based on the sign of the number : positive, negative,parity
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | positive | string  | 
-    | negative | string  | 
-    | parity | string  | 
+    | input | string  | input value received
+    | positive | string  | string if value is positive
+    | negative | string  | string if value is negative
+    | parity | string  | string if value is zero
 
 
 ```
@@ -97,7 +97,7 @@ Subtracts a number from another number
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | int | int  | 
 
 

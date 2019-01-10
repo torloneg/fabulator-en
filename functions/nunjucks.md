@@ -12,7 +12,7 @@ Return the absolute value of the argument
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | int  | 
+    | input | int  | input value received
 
 
 ```
@@ -27,7 +27,7 @@ Make the first letter uppercase, the rest lower case
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -42,7 +42,7 @@ Sort a dict and yield (key, value) pairs
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```
@@ -64,7 +64,7 @@ Call JSON.stringify on an object and dump the result into the template. Useful f
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | object  | 
+    | input | object  | input value received
 
 
 ```
@@ -79,7 +79,7 @@ Get the first item in an array or the first letter if it&#x27;s a string
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | object  | 
+    | input | object  | input value received
 
 
 ```
@@ -97,7 +97,7 @@ Convert a value into a floating point number. If the conversion fails 0.0 is ret
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -112,7 +112,7 @@ Group a sequence of objects by a common attribute
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```
@@ -138,7 +138,7 @@ Convert the value into an integer. If the conversion fails 0 is returned.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -153,9 +153,9 @@ Return a string which is the concatenation of the strings in a sequence
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
-    | separator | string  | 
-    | attribute | string  | 
+    | input | array  | input value received
+    | separator | string  | character to be used to link strings
+    | attribute | string  | if the array contains objects is the attribute name
 
 
 ```
@@ -177,7 +177,7 @@ Get the last item in an array or the last letter if it&#x27;s a string:
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```
@@ -211,7 +211,7 @@ Convert the value into a list. If it was a string the returned list will be a li
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -227,7 +227,7 @@ Convert string to all upper case
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -243,7 +243,7 @@ Select a random value from an array.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```
@@ -263,7 +263,8 @@ If no test is specified, the attribute’s value will be evaluated as a boolean.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
+    | name | string  | attribute name
 
 
 ```
@@ -278,7 +279,9 @@ Replace one item with another. The first item is the item to be replaced, the se
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
+    | old_string | string  | string to replace
+    | new_string | string  | new string
 
 
 ```
@@ -293,7 +296,7 @@ output: 123.56
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -310,8 +313,8 @@ output: fedcba
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | float  | 
-    | digit | int  | 
+    | input | float  | input value received
+    | digit | int  | number of digits to be rounded
 
 
 ```
@@ -327,7 +330,7 @@ Mark the value as safe which means that in an environment with automatic escapin
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -347,7 +350,8 @@ If no test is specified, the attribute’s value will be evaluated as a boolean.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
+    | attribute | array  | attribute name
 
 
 ```
@@ -363,8 +367,8 @@ Slice an iterator and return a list of lists containing those items:
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
-    | value | int  | 
+    | input | array  | input value received
+    | value | int  | number of elements to be returned
 
 
 ```
@@ -403,7 +407,7 @@ output: &lt;div class&#x3D;&quot;columwrapper&quot;&gt;
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | number  | 
+    | input | number  | input value received
 
 
 ```
@@ -419,7 +423,7 @@ Analog of jinja&#x27;s striptags. If preserve_linebreaks is false (default), str
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | number  | 
+    | input | number  | input value received
 
 
 ```
@@ -432,7 +436,7 @@ output:
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```
@@ -448,7 +452,7 @@ Make the first letter of the string uppercase also a list of string
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -462,7 +466,7 @@ output: Foo Bar Baz
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```

@@ -15,7 +15,7 @@ adds any time entity to the date
     | input | string  | input value received
     | int | string  | number of unit to add
     | what | string  | d for day, m for month, y for year
-    | format | string  | format date
+    | format | string  | date format
 
 
 ```
@@ -87,7 +87,7 @@ date in extended format in the passed language as a parameter
     | name | type  | description
     | :--- | :---  | :---        |
     | input | string  | input value received
-    | language | string  | 
+    | language | string  | *en* for english or *it* for italian
 
 
 ```
@@ -107,8 +107,8 @@ Returns a date in compact format
     | name | type  | description
     | :--- | :---  | :---        |
     | input | string  | input value received
-    | language | string  | 
-    | format | string  | 
+    | language | string  | *en* for english or *it* for italian
+    | format | string  | date format
 
 
 ```
@@ -125,7 +125,7 @@ returns the day in the language indicated as parameter
     | name | type  | description
     | :--- | :---  | :---        |
     | input | string  | input value received
-    | language | string  | 
+    | language | string  | *en* for english or *it* for italian
 
 
 ```
@@ -145,7 +145,7 @@ returns the month in letters in the language indicated as a parameter
     | name | type  | description
     | :--- | :---  | :---        |
     | input | string  | input value received
-    | language | string  | 
+    | language | string  | *en* for english or *it* for italian
 
 
 ```
@@ -165,8 +165,8 @@ Now in format string
     | name | type  | description
     | :--- | :---  | :---        |
     | input | string  | input value received
-    | language | string  | 
-    | format | string  | 
+    | language | string  | *en* for english or *it* for italian
+    | format | string  | date format
 
 
 ```
@@ -186,7 +186,7 @@ date in extended format in the passed language as a parameter
     | name | type  | description
     | :--- | :---  | :---        |
     | input | string  | input value received
-    | language | string  | 
+    | language | string  | *en* for english or *it* for italian
 
 
 ```
@@ -206,7 +206,7 @@ Returns the date in the indicated timezone
     | name | type  | description
     | :--- | :---  | :---        |
     | input | string  | input value received
-    | timezone | string  | 
+    | language | string  | 
     | format | string  | 
 
 

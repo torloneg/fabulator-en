@@ -13,8 +13,8 @@ converts the value of one currency into another
     | name | type  | description
     | :--- | :---  | :---        |
     | input | string  | input value received
-    | from | string  | 
-    | to | string  | 
+    | from | string  | currency from
+    | to | string  | currency to
 
 
 ```

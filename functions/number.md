@@ -12,8 +12,8 @@ returns an number in the language specified as an argument
 **params**
      | name | type  | description
      | :--- | :---  | :---        |
-     | input | string  | 
-     | language | list  | 
+     | input | string  | number to be transformed into natural language
+     | language | list  | *en* for english or *it* for italian
 
 
 ```
@@ -28,8 +28,8 @@ returns an ordinal number in the language specified as an argument
 **params**
      | name | type  | description
      | :--- | :---  | :---        |
-     | input | string  | 
-     | language | list  | 
+     | input | string  | number to be transformed into natural language
+     | language | list  | *en* for english or *it* for italian
 
 
 ```
