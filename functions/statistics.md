@@ -12,7 +12,7 @@ Return max value in array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```
@@ -27,7 +27,7 @@ method returns the average value of the numbers in the array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```
@@ -42,7 +42,7 @@ Return min value in array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```
@@ -57,7 +57,7 @@ method returns the sum of the number values present in the array
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | array  | 
+    | input | array  | input value received
 
 
 ```

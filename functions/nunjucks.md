@@ -483,10 +483,10 @@ Truncate to 3 characters:
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | nchar | string  | 
-    | lastword | string  | 
-    | append | string  | 
+    | input | string  | input value received
+    | nchar | string  | char to truncate
+    | lastword | string  | true or false to truncate
+    | append | string  | string to append
 
 
 ```
@@ -518,7 +518,7 @@ output: MY NAME
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -533,7 +533,7 @@ output: foo &lt;a href&#x3D;&quot;http://www.example.com/&quot;&gt;http://www.ex
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```

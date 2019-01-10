@@ -12,7 +12,7 @@ Remove any underscores or dashes and convert a string into camel casing.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -27,7 +27,7 @@ Convert all characters into uppercase letters
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -42,8 +42,8 @@ Removes prefix from start of string.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | prefix | string  | 
+    | input | string  | input value received
+    | prefix | string  | string pattern
 
 
 ```
@@ -58,8 +58,8 @@ Removes suffix from end of string
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | prefix | string  | 
+    | input | string  | input value received
+    | prefix | string  | string pattern
 
 
 ```
@@ -74,7 +74,7 @@ Converts all adjacent whitespace characters to a single space.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -89,7 +89,7 @@ Returns a converted camel cased string into a string delimited by dashes.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -104,7 +104,7 @@ Decodes HTML entities into their string representation.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -119,7 +119,7 @@ Escapes the html.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -134,8 +134,8 @@ Return the substring denoted by n positive left-most characters.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | count | int  | 
+    | input | string  | input value received
+    | count | int  | number of char
 
 
 ```
@@ -150,8 +150,8 @@ Returns a string repeated n times.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | count | int  | 
+    | input | string  | input value received
+    | count | int  | number of repetitions
 
 
 ```
@@ -166,8 +166,8 @@ Return the substring denoted by n positive right-most characters.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | count | string  | 
+    | input | string  | input value received
+    | count | string  | number of char
 
 
 ```
@@ -182,8 +182,8 @@ replace last right char
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | char | string  | 
+    | input | string  | input value received
+    | char | string  | character to replace
 
 
 ```
@@ -198,7 +198,7 @@ Converts the text into a valid url slug. Removes accents from Latin characters.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -213,7 +213,7 @@ Converts a a logical truth string to boolean. That is: true, 1, &#x27;true&#x27;
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -228,7 +228,7 @@ Return the float value, wraps parseFloat
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | precision | int  | 
 
 
@@ -244,7 +244,7 @@ Return the float value, wraps parseInt
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
     | precision | int  | 
 
 
@@ -260,7 +260,7 @@ Unescapes the html.
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
+    | input | string  | input value received
 
 
 ```
@@ -275,8 +275,8 @@ wrapHTML helps to avoid concatenation of element with string. the string will be
 **params**
     | name | type  | description
     | :--- | :---  | :---        |
-    | input | string  | 
-    | tag | string  | 
+    | input | string  | input value received
+    | tag | string  | html tag name
 
 
 ```
