@@ -2,51 +2,50 @@
 description: Description of Nunjucks
 ---
 
-# Base
+# Nunjucks
+
 
 ## abs
-
 Return the absolute value of the argument
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | int  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | int |  |
 
-```text
+```
 example: {{ -3|abs }}
 
 output: 3
 ```
-
 ## capitalize
-
 Make the first letter uppercase, the rest lower case
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "This Is A Test" | capitalize }}
 
 output: This is a test
 ```
-
 ## dictsort
+Sort a dict and yield (key, value) pairs
 
-Sort a dict and yield \(key, value\) pairs
 
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
 
-```text
+```
 example: {% set items = {    'e': 1,
     'd': 2,
     'c': 3,
@@ -58,68 +57,65 @@ example: {% set items = {    'e': 1,
 
 output: a b c d e f
 ```
-
 ## dump
+Call JSON.stringify on an object and dump the result into the template. Useful for debugging: {{ items | dump }}.
 
-Call JSON.stringify on an object and dump the result into the template. Useful for debugging: .
 
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | object  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | object |  |
 
-```text
+```
 example: {% set items = ["a", 1, { b : true}] %} {{ items | dump }}
 
 output: a,1,[object Object]
 ```
-
 ## first
+Get the first item in an array or the first letter if it&#x27;s a string
 
-Get the first item in an array or the first letter if it's a string
 
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | object  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | object |  |
 
-```text
+```
 example: {% set items = [1,2,3] %} {{ items | first }}
 {% set word = 'abc' %} {{ word | first }}
 
 output: 1
 a
+
 ```
-
 ## float
-
 Convert a value into a floating point number. If the conversion fails 0.0 is returned. This default can be overridden by using the first parameter.
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "3.5" | float }}
 
 output: 3.5
 ```
-
 ## groupby
-
 Group a sequence of objects by a common attribute
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
 
-```text
+```
 example: {% set items = [        { name: 'james', type: 'green' },
         { name: 'john', type: 'blue' },
         { name: 'jim', type: 'blue' },
@@ -133,37 +129,36 @@ example: {% set items = [        { name: 'james', type: 'green' },
 {% endfor %}
 
 output: green : james jessie blue : john jim
+
 ```
-
 ## int
-
 Convert the value into an integer. If the conversion fails 0 is returned.
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "3.5" | float }}
 
 output: 3
 ```
-
 ## join
-
 Return a string which is the concatenation of the strings in a sequence
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
+    | separator | string  | 
+    | attribute | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
-| separator | string |  |
-| attribute | string |  |
 
-```text
+```
 example: {% set items =  [1, 2, 3] %} {{ items | join }}
 {% set items = ['foo', 'bar', 'bear'] %} {{ items | join(",") }}
 {% set items = [    { name: 'foo' },
@@ -173,207 +168,206 @@ example: {% set items =  [1, 2, 3] %} {{ items | join }}
 {{ items | join(",", "name") }}
 
 output: 123 foo,bar,bear foo,bar,bear
+
 ```
-
 ## last
+Get the last item in an array or the last letter if it&#x27;s a string:
 
-Get the last item in an array or the last letter if it's a string:
 
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
 
-```text
+```
 example: {% set items = [1,2,3] %} {{ items | last }}
 {% set word = 'abc' %} {{ word | last }}
 
 output: 3
 c
+
 ```
-
 ## length
-
 Return the length of an array or string, or the number of keys in an object
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
 
-```text
+```
 example: {{ [1,2,3] | length }} {{ "test" | length }} {{ {key: value} | length }}
 
 output: 3 4 1
+
 ```
-
 ## list
-
 Convert the value into a list. If it was a string the returned list will be a list of characters.
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {% for i in "foobar" | list %}{{ i }},{% endfor %}
 
 output: f,o,o,b,a,r,
+
 ```
-
 ## upper
-
 Convert string to all upper case
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "fOObAr" | upper }}
 
 output: FOOBAR
+
 ```
-
 ## random
-
 Select a random value from an array.
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
 
-```text
+```
 example: {{ [1,2,3,4,5,6,7,8,9] | random }}
 
 output: A random value between 1-9 (inclusive).
+
 ```
-
 ## rejectattr
-
 Filter a sequence of objects by applying a test to the specified attribute of each object, and rejecting the objects with the test succeeding.
 
 This is the opposite of selectattr filter.
 
 If no test is specified, the attribute’s value will be evaluated as a boolean.
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
 
-```text
+```
 example: {% set foods = [{tasty: true}, {tasty: false}, {tasty: true}]%} {{ foods | rejectattr("tasty") | length }}
 
 output: 1
 ```
-
 ## replace
-
 Replace one item with another. The first item is the item to be replaced, the second item is the replaced value.
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {% set numbers = 123456 %} {{ numbers | replace("4", ".") }}
 {% set letters = aaabbbccc%} {{ "letters" | replace("", ".") }}
 
 output: 123.56
 ```
-
 ## reverse
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "abcdef" | reverse }} {% for i in [1, 2, 3, 4] | reverse %}    {{ i }}
 {% endfor %}
 
 output: fedcba
 4 3 2 1
-```
 
+```
 ## round
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | float  | 
+    | digit | int  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | float |  |
-| digit | int |  |
 
-```text
+```
 example: {{ 4.5 | round }} {{ 4.12346 | round(4) }}
 
 output: 5
 4.1235
+
 ```
-
 ## safe
-
 Mark the value as safe which means that in an environment with automatic escaping enabled this variable will not be escaped.
 
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "foo http://www.example.com/ bar" | urlize | safe }}
 
 output: foo &lt;a href&#x3D;&quot;http://www.example.com/&quot;&gt;http://www.example.com/&lt;/a&gt; bar
+
 ```
-
 ## selectattr
-
 Filter a sequence of objects by applying a test to the specified attribute of each object, and only selecting the objects with the test succeeding.
 
 This is the opposite to rejectattr.
 
 If no test is specified, the attribute’s value will be evaluated as a boolean.
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
 
-```text
+```
 example: {% set foods = [{tasty: true}, {tasty: false}, {tasty: true}]%} {{ foods | selectattr("tasty") | length }}
 
 output: 2
+
 ```
-
 ## slice
-
 Slice an iterator and return a list of lists containing those items:
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
+    | value | int  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
-| value | int |  |
 
-```text
+```
 example: {% set arr = [1,2,3,4,5,6,7,8,9] %}
 <div class="columwrapper">  {%- for items in arr | slice(3) %}
     <ul class="column-{{ loop.index }}">
@@ -401,142 +395,147 @@ output: &lt;div class&#x3D;&quot;columwrapper&quot;&gt;
       &lt;li&gt;9&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
-```
 
+```
 ## string
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | number  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | number |  |
 
-```text
+```
 example: {% set item = 1234 %} {{ item | string }}
 
 output: &quot;1234&quot;
+
 ```
-
 ## striptags
+Analog of jinja&#x27;s striptags. If preserve_linebreaks is false (default), strips SGML/XML tags and replaces adjacent whitespace with one space. If preserve_linebreaks is true, normalizes whitespace, trying to preserve original linebreaks. Use second behavior if you want to pipe {{ text | striptags(true) | escape | nl2br }}. Use default one otherwise.
 
-Analog of jinja's striptags. If preserve\_linebreaks is false \(default\), strips SGML/XML tags and replaces adjacent whitespace with one space. If preserve\_linebreaks is true, normalizes whitespace, trying to preserve original linebreaks. Use second behavior if you want to pipe . Use default one otherwise.
 
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | number  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | number |  |
 
-```text
-example: 
-output:
 ```
-
+example: 
+output: 
+```
 ## sum
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | array  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | array |  |
 
-```text
+```
 example: {% set items = [1,2,3] %} {{ items | sum }}
 
 output: 6
+
 ```
-
 ## title
-
 Make the first letter of the string uppercase also a list of string
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "foo bar baz" | title }}
 
 output: Foo Bar Baz
 ```
-
 ## trim
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "  foo " | trim }}
 
 output: foo
 ```
-
 ## truncate
+The length is specified with the first parameter which defaults to 255. If the second parameter is true the filter will cut the text at length.
+Otherwise it will discard the last word. If the text was in fact truncated it will append an ellipsis sign (&quot;...&quot;). A different ellipsis sign than &quot;(...)&quot; can be specified using the third parameter.
+Truncate to 3 characters:
 
-The length is specified with the first parameter which defaults to 255. If the second parameter is true the filter will cut the text at length. Otherwise it will discard the last word. If the text was in fact truncated it will append an ellipsis sign \("..."\). A different ellipsis sign than "\(...\)" can be specified using the third parameter. Truncate to 3 characters:
 
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
+    | nchar | string  | 
+    | lastword | string  | 
+    | append | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
-| nchar | string |  |
-| lastword | string |  |
-| append | string |  |
 
-```text
+```
 example: {{ "foo bar" | truncate(3) }} {{ "foo bar baz" | truncate(6, true, "?") }}
 
 output: foo
 foo ba ?
+
 ```
-
 ## upper
-
 Convert a string in upper case
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "my name" | upper }}
 
 output: MY NAME
-```
 
+```
 ## urlize
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {{ "foo http://www.example.com/ bar" | urlize | safe }}
 
 output: foo &lt;a href&#x3D;&quot;http://www.example.com/&quot;&gt;http://www.example.com/&lt;/a&gt; bar
-```
 
+```
 ## wordcount
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | string |  |
 
-```text
+```
 example: {% set foo = "Hello World"%} {{ foo | wordcount }}
 
 output: 2
 ```
+
 

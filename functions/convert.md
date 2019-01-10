@@ -4,25 +4,26 @@ description: Description of Convert
 
 # Convert
 
-## Convert.FromTo
 
+## Convert.FromTo
 A handy utility for converting between quantities in different units.
 
+
 **params**
+    | name | type  | description
+    | :--- | :---  | :---        |
+    | input | float  | 
+    | from | string  | 
+    | to | string  | 
 
-| name | type | description |
-| :--- | :--- | :--- |
-| input | float |  |
-| from | string |  |
-| to | string |  |
-
-```text
+```
 example: {{  1 | Convert.FromTo('l','ml')}}
 
 output: 1000
-```
 
-```text
+```
+---
+```
 Length : mm, cm, m, in, ft-us, ft, mi
 Area: mm2, cm2, m2, ha, km2, in2, ft2, ac, mi2
 Mass: mcg, mg, g, kg, oz, lb, mt, t
@@ -39,5 +40,7 @@ Power: W, mW, kW, MW, GW
 Energy: Wh, mWh, kWh, MWh, GWh, J, kJ
 Angle: deg, rad, grad, arcmin, arcsec
 Force: N, kN, lbf
+
 ```
+
 
