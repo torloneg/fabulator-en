@@ -56,6 +56,15 @@ Endpoint Rule
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "name": "string",
+  "note": "string",
+  "status": 0
+}' 'https://api.fabulator.io/rule/v1/add/<iddomain>'
+```
+
+
 ### /rule/v1/info/{id}
 ---
 ##### ***GET***
@@ -70,6 +79,10 @@ Endpoint Rule
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
+
+```
+curl -X GET --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/rule/v1/info/<id>'
+```
 
 ### /rule/v1/query/{iddomain}/{skip}/{limit}
 ---
@@ -88,6 +101,17 @@ Endpoint Rule
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "select": "{}",
+  "order": {
+    "field": "date_update",
+    "dir": 1
+  },
+  "query": "{}"
+}' 'https://api.fabulator.io/rule/v1/query/<iddomain>/0/30'
+```
 
 ### /rule/v1/{id}
 ---

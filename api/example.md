@@ -33,7 +33,7 @@ Endpoint Example
 | default | Successful | string |
 
 ```
-curl -X GET --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/example/v1/info/**<iddomain>**/**<id>**'
+curl -X GET --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/example/v1/info/<iddomain>/<id>'
 ```
 
 ### /example/v1/add/{iddomain}
@@ -57,7 +57,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
   "name": "string",
   "description": "string",
   "json": {}
-}' 'https://api.fabulator.io/example/v1/add/11111111111111'
+}' 'https://api.fabulator.io/example/v1/add/<iddomain>'
 ```
 
 ### /example/v1/query/{iddomain}/{skip}/{limit}
@@ -86,7 +86,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
     "dir": 1
   },
   "query": "{}"
-}' 'https://api.fabulator.io/example/v1/query/111111111/0/30'
+}' 'https://api.fabulator.io/example/v1/query/<iddomain>/<skip>/<limit>'
 ```
 
 
@@ -107,7 +107,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | default | Successful | string |
 
 ```
-curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/example/v1/update/111111111/111111111111'
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/example/v1/update/<iddomain>/<id>'
 ```
 
 ### /example/v1/update/{iddomain}/{id}
@@ -127,7 +127,7 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
 | default | Successful | string |
 
 ```
-curl -X PATCH --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/example/v1/update/1111111/11111111/field_name/new%20value'
+curl -X PATCH --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/example/v1/update/<iddomain>/<id>/field_name/new%20value'
 ```
 
 ### /example/v1/update_json/{iddomain}/{id}
@@ -150,7 +150,7 @@ curl -X PATCH --header 'Content-Type: application/json' --header 'Accept: applic
 ```
 curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
   "json": {}
-}' 'https://api.fabulator.io/example/v1/update_json/11111111/111111111111'
+}' 'https://api.fabulator.io/example/v1/update_json/<iddomain>/<id>'
 ```
 
 ### /example/v1/update/{iddomain}/{id}/{field}/{value}
@@ -172,5 +172,5 @@ curl -X PUT --header 'Content-Type: application/json' --header 'Accept: applicat
 | default | Successful | string |
 
 ```
-curl -X PATCH --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/example/v1/update/1111111/11111111/field_name/new%20value'
+curl -X PATCH --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/example/v1/update/<iddomain>/<id>/<field>/<value>'
 ```
