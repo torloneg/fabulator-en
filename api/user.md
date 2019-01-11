@@ -29,6 +29,10 @@ Endpoint User
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X GET --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/users/v1/info/5ace3f349fc9355398e0ea8d'
+```
+
 ### /users/v1/add
 ---
 ##### ***POST***
@@ -44,6 +48,18 @@ Endpoint User
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "email": "demo3@gmail.com",
+  "password": "demo3-pwd192345",
+  "first_name": "demo3",
+  "last_name": "user demo",
+  "role": "user"
+}' 'https://api.fabulator.io/users/v1/add'
+```
+
+
+
 ### /users/v1/query/{skip}/{limit}
 ---
 ##### ***POST***
@@ -54,6 +70,18 @@ Endpoint User
 | skip | path |  | Yes | number |
 | limit | path |  | Yes | number |
 | body | body |  | No | [Model 12](#model-12) |
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <AUTHTOKEN>' -d '{
+  "select": "{}",
+  "order": {
+    "field": "date_update",
+    "dir": 1
+  },
+  "query": "{\"role\":\"user\"}"
+}' 'https://api.fabulator.io/users/v1/query/0/30'
+```
+
 
 **Responses**
 
