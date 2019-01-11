@@ -119,6 +119,13 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json'  -d '{
+  "email": "demo3@gmail.com",
+  "password": "pwd"
+}' 'https://api.fabulator.io/users/v1/login'
+```
+
 ### /users/v1/reset_password/{token}
 ---
 ##### ***POST***
@@ -135,6 +142,13 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "password": "test"
+}' 'https://api.fabulator.io/users/v1/reset_password/1111111'
+```
+
+
 ### /users/v1/send_password_reminder/{email}
 ---
 ##### ***POST***
@@ -149,6 +163,10 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/users/v1/send_password_reminder/demo3%40gmail.com'
+```
 
 ### /users/v1/update/{id}
 ---
@@ -166,8 +184,13 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
-
-
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "first_name": "new first name",
+  "last_name": "new last name",
+  "role": "user"
+}' 'https://api.fabulator.io/users/v1/update/11111111111111111111'
+```
 
 ### /users/v1/update/{id}/{field}/{value}
 ---
@@ -185,3 +208,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
+
+```
+curl -X PATCH --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization:  <TOKEN>' 'https://api.fabulator.io/users/v1/update/11111111111111111/first_name/new%20value'
+```
