@@ -14,6 +14,9 @@ Endpoint Schema
 |Name|Authorization|
 |In|header|
 
+**<TOKEN>** value returned by the authentication function
+
+
 ### /schema/v1/info/{id}
 ---
 ##### ***GET***
@@ -61,4 +64,3 @@ Endpoint Schema
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
-

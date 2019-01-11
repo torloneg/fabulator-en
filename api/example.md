@@ -14,7 +14,7 @@ Endpoint Example
 |Name|Authorization|
 |In|header|
 
-
+**<TOKEN>** value returned by the authentication function
 
 ### /example/v1/info/{iddomain}/{id}
 ---
@@ -136,4 +136,3 @@ Endpoint Example
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
-

@@ -3,7 +3,7 @@ Fabulator API
 Endpoint Parser
 
 **Version:** 1.0.0
- 
+
 
 ### Security
 ---
@@ -13,6 +13,9 @@ Endpoint Parser
 |---|---|
 |Name|Authorization|
 |In|header|
+
+**<TOKEN>** value returned by the authentication function
+
 
 ### /parser/v1/rule/{idrule}
 ---

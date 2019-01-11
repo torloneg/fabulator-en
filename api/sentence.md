@@ -14,6 +14,9 @@ Endpoint Sentence
 |Name|Authorization|
 |In|header|
 
+**<TOKEN>** value returned by the authentication function
+
+
 
 ### /sentence/v1/{idrule}/{id}
 ---
@@ -83,6 +86,3 @@ Endpoint Sentence
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
-
-
-

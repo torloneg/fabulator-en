@@ -14,6 +14,8 @@ Endpoint Domain
 |Name|Authorization|
 |In|header|
 
+**<TOKEN>** value returned by the authentication function
+
 ### /domain/v1/info/{id}
 ---
 ##### ***GET***
@@ -29,6 +31,10 @@ Endpoint Domain
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X GET --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/domain/v1/info/11111111111111111'
+```
+
 ### /domain/v1/add
 ---
 ##### ***POST***
@@ -43,6 +49,16 @@ Endpoint Domain
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
+
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "name": "string",
+  "description": "string",
+  "color": "string",
+  "language": "it-IT",
+  "status": 0
+}' 'https://api.fabulator.io/domain/v1/add'
+```
 
 ### /domain/v1/query/{skip}/{limit}
 ---
@@ -61,6 +77,16 @@ Endpoint Domain
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "select": "{}",
+  "order": {
+    "field": "date_update",
+    "dir": 1
+  },
+  "query": "{}"
+}' 'https://api.fabulator.io/domain/v1/query/0/30'
+```
 
 ### /domain/v1/{id}
 ---
@@ -77,6 +103,9 @@ Endpoint Domain
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X DELETE --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/domain/v1/11111111111111'
+```
 
 ### /domain/v1/update/{id}
 ---
@@ -94,6 +123,15 @@ Endpoint Domain
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "name": "string",
+  "description": "string",
+  "color": "string",
+  "language": "it-IT",
+  "status": 0
+}' 'https://api.fabulator.io/domain/v1/update/1111111111111'
+```
 
 ### /domain/v1/update/{id}/{field}/{value}
 ---
@@ -112,3 +150,6 @@ Endpoint Domain
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X PATCH --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/domain/v1/update/1111111111111111/field_name/value'
+```

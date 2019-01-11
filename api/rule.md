@@ -12,6 +12,9 @@ Endpoint Rule
 |Name|Authorization|
 |In|header|
 
+**<TOKEN>** value returned by the authentication function
+
+
 ### /execute/v1/rule/{idrule}
 ---
 ##### ***POST***
@@ -118,6 +121,3 @@ Endpoint Rule
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
-
-
-

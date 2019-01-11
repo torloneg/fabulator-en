@@ -13,6 +13,7 @@ Endpoint User
 |Name|Authorization|
 |In|header|
 
+**<TOKEN>** value returned by the authentication function
 
 ### /users/v1/info/{id}
 ---
@@ -103,6 +104,10 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
+
+```
+curl -X DELETE --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/users/v1/1111111111111111'
+```
 
 ### /users/v1/login
 ---

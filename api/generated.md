@@ -18,6 +18,8 @@ torloneg@gmail.com
 |Name|Authorization|
 |In|header|
 
+**<TOKEN>** value returned by the authentication function
+
 ### /domain/v1/info/{id}
 ---
 ##### ***GET***
