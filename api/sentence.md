@@ -34,7 +34,7 @@ Endpoint Sentence
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
-
+curl -X DELETE --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/sentence/v1/<idrule>/<id>'
 
 ### /sentence/v1/info/{idrule}/{id}
 ---
@@ -52,7 +52,9 @@ Endpoint Sentence
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
-
+```
+curl -X GET --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/sentence/v1/info/<idrule>/<id>'
+```
 ### /sentence/v1/add/{idrule}
 ---
 ##### ***POST***
@@ -69,6 +71,14 @@ Endpoint Sentence
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "name": "string",
+  "text": "string",
+  "position": 0,
+  "status": 0
+}' 'https://api.fabulator.io/sentence/v1/add/<idrule>'
+```
 
 ### /sentence/v1/update/{idrule}/{id}
 ---
@@ -86,3 +96,12 @@ Endpoint Sentence
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
+
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "name": "string",
+  "text": "string",
+  "note": "string",
+  "status": 0
+}' 'https://api.fabulator.io/sentence/v1/update/<idrule>/<id>'
+```

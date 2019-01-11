@@ -31,14 +31,6 @@ Endpoint Rule
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
-### /parser/v1/rule/{idrule}
----
-##### ***POST***
-**Responses**
-
-| Code | Description | Schema |
-| ---- | ----------- | ------ |
-| default | Successful | string |
 
 ### /rule/v1/add/{iddomain}
 ---
@@ -128,6 +120,9 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | ---- | ----------- | ------ |
 | default | Successful | string |
 
+```
+curl -X DELETE --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/rule/v1/id'
+```
 
 ### /rule/v1/update/{iddomain}/{id}
 ---
@@ -145,3 +140,34 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 | Code | Description | Schema |
 | ---- | ----------- | ------ |
 | default | Successful | string |
+
+```
+curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' -d '{
+  "name": "string",
+  "note": "string",
+  "status": 0
+}' 'https://api.fabulator.io/rule/v1/update/<iddomain>/<id>'
+```
+
+
+### /example/v1/update/{iddomain}/{id}/{field}/{value}
+---
+##### ***PATCH***
+**Parameters**
+
+| Name | Located in | Description | Required | Schema |
+| ---- | ---------- | ----------- | -------- | ---- |
+| iddomain | path |  | Yes | string |
+| id | path |  | Yes | string |
+| field | path |  | Yes | string |
+| value | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description | Schema |
+| ---- | ----------- | ------ |
+| default | Successful | string |
+
+```
+curl -X PATCH --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Authorization: <TOKEN>' 'https://api.fabulator.io/rule/v1/update/<id>/<id>/<field>/<value>'
+```
