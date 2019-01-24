@@ -17,6 +17,7 @@ query a MongoDB collection
 
 ## example:
 
+
 ```text
 {% set query_mongodb = "{ \"district\": \"abruzzo\" }" %}
 {% DB_MongoQuery url=$DATABASE_MONGODB,collection="Meteo_History",query=query_mongodb,skip=0,limit=10,sort="{}",select="{}",context="items" %}
@@ -36,4 +37,3 @@ L'aquila : MIN ( 3°C ) MAX ( 12°C )
 Pescara : MIN ( 7°C ) MAX ( 18°C )
 Teramo : MIN ( 5°C ) MAX ( 12°C )
 ```
-
