@@ -5,9 +5,9 @@ SDKs are available to access the project's REST APIs for three popular technolog
 To install the Python libraries you can follow the instructions at this url [https://github.com/torloneg/fabulator-sdk-python](https://github.com/torloneg/fabulator-sdk-python)
 
 ## NODEJS
-To install the Python libraries you can follow the instructions at this url https://github.com/torloneg/fabulator-sdk-javascript](https://github.com/torloneg/fabulator-sdk-javascript)
+To install the Python libraries you can follow the instructions at this url [https://github.com/torloneg/fabulator-sdk-javascript](https://github.com/torloneg/fabulator-sdk-javascript)
 
-## C#
+## .NET
 To install the Python libraries you can follow the instructions at this url [https://github.com/torloneg/fabulator-sdk-csharp](https://github.com/torloneg/fabulator-sdk-csharp)
 
 
