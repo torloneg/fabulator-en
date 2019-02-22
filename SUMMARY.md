@@ -30,6 +30,7 @@
 * [inRangeBlock](tags/inrangeblock.md)
 * [outRangeBlock](tags/outrangeblock.md)
 * [set](tags/set.md)
+* [macro](tags/macro.md)
 * [text](tags/text.md)
 
 ## FUNCTIONS
@@ -72,4 +73,3 @@
 * [CONDITION](example/filter_condition.md)
 * [ARRAY](example/filter_array.md)
 * [DATE TIME](example/filter_datetime.md)
-
